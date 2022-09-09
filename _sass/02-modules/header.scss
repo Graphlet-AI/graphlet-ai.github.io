@@ -1,0 +1,106 @@
+.brand-logo {
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
+  img {
+    height: 8rem;
+  }
+}
+.header-bg {
+  background-image: url("/assets/header/bgTop.png");
+  background-size: cover;
+  padding: 3rem 0 10rem;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.custom-nav {
+  .trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+    height: 8rem;
+
+    a {
+      color: white;
+    }
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: $secondary-color;
+    }
+
+    a:last-of-type {
+      font-weight: 500;
+    }
+  }
+}
+
+.navbar-heading {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+.navbar-subheading {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+@media screen and (max-width: 1201px) {
+  .brand-logo {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  .custom-nav {
+    .trigger {
+      height: 4rem;
+    }
+  }
+  .navbar-heading {
+    font-size: 3rem;
+  }
+  .navbar-subheading {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 601px) {
+  .show-link {
+    a {
+      margin: 0 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-bg {
+    padding: 3rem 0 5rem;
+  }
+  .custom-nav {
+    .trigger {
+      font-size: 15px;
+    }
+  }
+  .navbar-subheading {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .custom-nav {
+    .trigger {
+      height: 2rem;
+      font-size: 10px;
+    }
+  }
+  .brand-logo img {
+    height: 6rem;
+  }
+  .navbar-heading {
+    font-size: 2rem;
+  }
+  .navbar-subheading {
+    font-size: 15px;
+  }
+}

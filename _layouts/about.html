@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="about">
+  <section class="about-CEO">
+    <div>
+      <img src="{{site.baseurl}}/assets/{{page.image}}" class="CEO-img" />
+      <hr />
+      <p>{{ page.caption }}</p>
+    </div>
+    <div>
+      <h3 class="about-heading">{{ page.heading }}</h3>
+      <p>{{ content }}</p>
+    </div>
+  </section>
+
+  <section class="CEO-contact">
+    <h3 class="about-heading">Have any questions left?</h3>
+    <button class="custom-btn">Contact me</button>
+    <p class="linkedin">
+      Or visit my
+      <span class="linkedin-icon"></span>
+      <a href="{{page.linkedin}}" target="_blank"> Linkedin Profile</a>
+    </p>
+  </section>
+</div>

@@ -1,0 +1,147 @@
+#introduction {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 15%;
+  padding-bottom: 2rem;
+  max-width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
+.introduction {
+  margin-top: -3rem;
+  color: white;
+  font-size: 18px;
+  background-image: url("/assets/home/bg.png");
+  background-size: cover;
+  padding-bottom: 15%;
+  
+  > div {
+    max-width: 80%;
+    margin: auto;
+  }
+  .home-highlight {
+    padding: 6rem;
+    background-image: url("/assets/home/paper bg dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+#problem-definition {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.problem-definition {
+  font-size: 18px;
+  background-image: url("/assets/home/bg2.jpg");
+  background-size: contain;
+  padding-bottom: 3rem;
+
+  > div {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  strong {
+    color: $secondary-color;
+  }
+  img {
+    margin-left: 5rem;
+    width: 90%;
+  }
+}
+.img-caption {
+  margin: 1rem 5rem 2rem;
+  hr {
+    border-top: 1px solid black;
+  }
+  p {
+    font-weight: 600;
+  }
+}
+.highlight {
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 2rem auto;
+}
+.paper-bg {
+  padding: 2rem 6rem;
+  background-image: url("/assets/home/paper bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  strong {
+    color: $secondary-color;
+  }
+}
+@media screen and (max-width: 1101px) {
+  #introduction{
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+  .introduction {
+    padding: 2rem;
+    text-align: justify;    
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 15%;
+
+    div {
+      background-image: none;
+      height: fit-content;
+      padding: 0;
+    }
+
+    .home-highlight{
+      background-image: none;
+      background-color: $main-color-dark;
+      padding: 2rem;
+    }
+  }
+  .problem-definition {
+    text-align: justify;
+    img {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .img-caption {
+    margin: 1rem 0 2rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .paper-bg {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  #introduction {
+    font-size: 35px;
+    margin-top: 20%;
+  }
+  .introduction{
+    padding-bottom: 40%;
+  }
+  .home-content{
+    margin-top: -4rem;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 376px) {
+  #introduction {
+    margin-top: 0;
+  }
+  .introduction{
+    padding-bottom: 10%;
+    background-image: none;
+    background-color: $main-color;
+  }
+  .home-content{
+    margin-top: -2rem;
+  }
+}

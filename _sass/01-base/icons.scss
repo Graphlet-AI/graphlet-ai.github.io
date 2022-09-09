@@ -1,0 +1,95 @@
+.linkedin-icon {
+  background: url("/assets/icons/linkedin-icon.svg") 0% 0% no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  zoom: 90%;
+}
+.email-icon {
+  background: url("/assets/icons/email-icon.svg") 0% 0% no-repeat;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  zoom: 90%;
+}
+.email-icon-light {
+  background: url("/assets/icons/email-icon-light.svg") 0% 0% no-repeat;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  zoom: 90%;
+}
+.phone-icon {
+  background: url("/assets/icons/phone-icon.svg") 0% 0% no-repeat;
+  background-size: contain;
+  width: 30px;
+  margin-right: 5px;
+  height: 25px;
+  display: inline-block;
+  zoom: 90%;
+}
+
+.pen-icon {
+  background: url("/assets/icons/pen-icon.svg") 0% 0% no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  zoom: 90%;
+  margin: 0 5px 0 0;
+}
+.calender-icon {
+  background: url("/assets/icons/calender-icon.svg") 0% 0% no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  zoom: 90%;
+  margin: 0 5px 0 25px;
+}
+.comment-icon {
+  background: url("/assets/icons/comment-icon.svg") 0% 0% no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  margin: 0 5px 0 25px;
+}
+.user-icon {
+  background: url("/assets/icons/user-icon.svg") 0% 0% no-repeat;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  zoom: 90%;
+}
+.pencil-icon {
+  background: url("/assets/icons/pencil-icon.svg") 0% 0% no-repeat;
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  zoom: 15%;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+.tag-icon {
+  background: url("/assets/icons/tag-icon.svg") 0% 0% no-repeat;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  zoom: 90%;
+}
+@media screen and (max-width: 468px) {
+  .pen-icon {
+    height: 10px;
+    width: 10px;
+  }
+  .calender-icon {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px 0 10px;
+  }
+  .comment-icon {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px 0 10px;
+  }
+}

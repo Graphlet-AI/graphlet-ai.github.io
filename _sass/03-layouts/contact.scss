@@ -1,0 +1,142 @@
+.contact-hide {
+  display: none;
+}
+#hire-me {
+  margin-right: 1rem;
+}
+.inactive-tab,
+.active-tab {
+  padding: 1rem 2rem;
+  border: 0px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+}
+.inactive-tab {
+  background-image: url("/assets/contact/inactive.png");
+
+  color: #ffffff;
+}
+.active-tab {
+  background-image: url("/assets/contact/active.png");
+  color: #000;
+}
+
+.contact-paper-bg {
+  background-image: url("/assets/contact/paper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  margin-top: -1.5rem;
+}
+.inputs-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 1rem;
+}
+.contact-btn {
+  font-size: 15px;
+  padding: 1rem 5rem;
+  background-color: transparent;
+  width: 100%;
+}
+
+#mc_embed_signup {
+  margin: 15px;
+  width: inherit;
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .mc-field-group {
+    width: inherit;
+  }
+  input {
+    border: 0;
+    border-radius: 0px;
+  }
+  textarea {
+    width: 95%;
+    font-family: inherit;
+    border: 0;
+    padding: 10px 0;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  form {
+    margin: 0;
+  }
+  .foot {
+    width: inherit;
+    grid-template-columns: auto;
+  }
+  #mc-embedded-subscribe-form div.mce_inline_error {
+    background-color: transparent;
+    position: absolute;
+    bottom: -1px;
+    font-size: 12px;
+  }
+  #mc-embedded-subscribe-form input.mce_inline_error {
+    border: none;
+  }
+}
+.helper_text {
+  background-color: transparent;
+}
+.contact-tabs {
+  margin-bottom: 1.8rem;
+}
+#mc-embedded-subscribe {
+  margin: 1em auto;
+}
+.error-msg-2 {
+  height: 0.8rem;
+}
+@media screen and (max-width: 976px) {
+  #mc_embed_signup .mc-field-group {
+    width: -webkit-fill-available;
+  }
+
+  #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    margin-bottom: 1rem;
+  }
+  input {
+    height: 2rem;
+  }
+  .error-msg,
+  .error-msg-2 {
+    height: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    font-size: 10px;
+  }
+  #mc_embed_signup {
+    h2,
+    p {
+      font-size: 12px;
+    }
+    textarea {
+      width: 90%;
+    }
+  }
+  .active-tab,
+  .inactive-tab {
+    font-size: 12px;
+    padding: 1rem;
+  }
+}

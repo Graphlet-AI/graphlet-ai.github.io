@@ -1,0 +1,25 @@
+<header class="site-header header-bg">
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%} {%- assign
+    page_paths = site.header_pages | default: default_paths -%} {%- assign
+    titles_size = site.pages | map: 'title' | join: '' | size -%}
+
+    <nav class="custom-nav">
+      <div class="trigger show-link">
+        <a class="page-link" href="/">Home</a>
+        <a class="page-link" href="/about">About</a>
+        <a class="page-link" href="/blog">Blog</a>
+        <a class="page-link" href="/contact">Contact</a>
+        <a class="page-link" href="/getting-started">Getting started</a>
+        <a class="page-link" href="/github">Github</a>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <a rel="author" href="{{ '/' | relative_url }}"
+        ><img src="{{site.baseurl}}/assets/header/logo.png"
+      /></a>
+    </div>
+    <h2 class="navbar-heading">{{page.header | upcase}}</h2>
+    <p class="navbar-subheading">{{page.description}}</p>
+  </div>
+</header>

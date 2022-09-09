@@ -1,0 +1,45 @@
+@import "./variables.scss";
+@import "./icons.scss";
+@import "./fonts.scss";
+
+body {
+  font-family: sourcecodepro-regular;
+}
+.custom-container {
+  margin: 0 10rem;
+}
+.page-content {
+  padding: 5rem 0;
+  margin-top: -3rem;
+}
+.custom-btn {
+  background-image: url("/assets/header/btn.png");
+  margin: 2rem auto 5rem;
+  padding: 1rem 2rem;
+  border: 0px;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: fit-content;
+}
+.custom-btn:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1201px) {
+  .custom-container {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .custom-container {
+    margin: 0 2rem;
+  }
+
+  .site-bg {
+    margin-top: -3rem;
+  }
+}

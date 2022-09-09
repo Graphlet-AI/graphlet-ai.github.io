@@ -1,0 +1,201 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-content">
+    <div>
+      <div class="contact-tabs">
+        <span onclick="changeTab(0)" class="active-tab" id="hire-me">
+          Hire me
+        </span>
+        <span
+          onclick="changeTab(1)"
+          class="inactive-tab"
+          id="contribute-project"
+        >
+          Contribute to project
+        </span>
+      </div>
+      <div class="contact-paper-bg">
+        <!-- Begin Mailchimp Signup Form -->
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <style type="text/css">
+          #mc_embed_signup {
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: 600px;
+          }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <p>Tell your thoughts</p>
+          <h2>Leave a message and I'll reach back to you</h2>
+          <form
+            action="https://graphlet.us13.list-manage.com/subscribe/post?u=6c005bae6f3bbff1c0470d7ee&amp;id=72d571d833&amp;f_id=0046c1e2f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <div class="inputs-flex">
+                <div class="mc-field-group">
+                  <div class="input-flex">
+                    <input
+                      type="text"
+                      value=""
+                      name="FNAME"
+                      class="required"
+                      id="mce-FNAME"
+                      placeholder="Full name"
+                      required
+                    />
+                    <span class="user-icon"></span>
+                  </div>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="mc-field-group">
+                  <div class="input-flex">
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      class="required email"
+                      id="mce-EMAIL"
+                      placeholder="Email address"
+                      required
+                    />
+                    <span class="email-icon"></span>
+                  </div>
+
+                  <div class="error-msg"></div>
+                </div>
+                <div class="mc-field-group">
+                  <div class="input-flex">
+                    <input
+                      type="text"
+                      value=""
+                      name="SUBJECT"
+                      class="required"
+                      id="mce-SUBJECT"
+                      placeholder="Subject"
+                      required
+                    />
+                    <span class="tag-icon"></span>
+                  </div>
+
+                  <div class="error-msg"></div>
+                </div>
+              </div>
+              <div class="mc-field-group">
+                <div class="input-flex">
+                  <textarea
+                    type="text"
+                    rows="10"
+                    value=""
+                    name="WORK"
+                    class="required"
+                    id="mce-WORK"
+                    placeholder="Work details"
+                    required
+                  ></textarea>
+                  <span class="pencil-icon"></span>
+                </div>
+                <div class="error-msg-2"></div>
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_6c005bae6f3bbff1c0470d7ee_72d571d833"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <button
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="custom-btn contact-btn"
+                  >
+                    Contact me
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        ></script>
+        <script type="text/javascript">
+          (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = "EMAIL";
+            ftypes[0] = "email";
+            fnames[2] = "FNAME";
+            ftypes[2] = "text";
+            fnames[1] = "SUBJECT";
+            ftypes[1] = "text";
+            fnames[3] = "WORK";
+            ftypes[3] = "text";
+          })(jQuery);
+          var $mcj = jQuery.noConflict(true);
+        </script>
+        <script type="text/javascript">
+          var changeTab = function (num) {
+            var list1 = document.getElementById("mc_embed_signup").classList;
+            var list2 = document.getElementById("contribute").classList;
+            var hire_btn = document.getElementById("hire-me");
+            var contribute_btn = document.getElementById("contribute-project");
+
+            if (num == 0) {
+              list1.remove("contact-hide");
+              list2.add("contact-hide");
+              hire_btn.classList.add("active-tab");
+              hire_btn.classList.remove("inactive-tab");
+              contribute_btn.classList.add("inactive-tab");
+              contribute_btn.classList.remove("active-tab");
+            } else {
+              list2.remove("contact-hide");
+              list1.add("contact-hide");
+              hire_btn.classList.remove("active-tab");
+              hire_btn.classList.add("inactive-tab");
+              contribute_btn.classList.remove("inactive-tab");
+              contribute_btn.classList.add("active-tab");
+            }
+          };
+        </script>
+        <!--End mc_embed_signup-->
+        <div id="contribute" class="contact-hide">
+          <h3>Contribute to Graphlet AI</h3>
+          <a href="/github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
