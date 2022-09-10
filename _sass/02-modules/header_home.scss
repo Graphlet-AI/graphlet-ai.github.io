@@ -19,20 +19,23 @@
   }
 }
 .home-heading {
-  font-size: 5rem;
+  font-size: 4.7rem;
+  font-family: gotham-book;
   margin: 0;
 }
 .home-subheading {
-  font-size: 30px;
+  font-size: 32px;
+  font-family: gotham-book;
   margin: 0;
 }
 .home-subheading-2 {
-  font-size: 20px;
+  font-size: 21px;
+  font-family: gotham-light;
 }
 .menu {
   display: none;
 }
-.page-link{
+.page-link {
   min-width: fit-content;
 }
 @media (max-width: 769px) {
@@ -46,7 +49,7 @@
     font-size: 17px;
   }
 }
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 1024px) {
   .site-nav {
     position: initial;
     background-color: transparent;
@@ -65,12 +68,9 @@
   }
   .trigger {
     justify-content: center;
-    img{
-      width: 50%;
-    }
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 480px) {
   .home-heading {
     font-size: 2.75rem;
   }
@@ -84,7 +84,10 @@
     font-size: 15px;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 338px) {
+  .menu {
+    font-size: 10px;
+  }
   .home-heading {
     font-size: 2rem;
   }

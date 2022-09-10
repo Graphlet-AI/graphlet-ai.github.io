@@ -7,4 +7,3 @@ description: Here you can reach me to hire me or contribute to open source proje
 background: contact/bg.jpg
 ---
 
-Contact page

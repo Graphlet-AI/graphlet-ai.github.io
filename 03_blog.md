@@ -6,5 +6,3 @@ permalink: /blog
 description: Latest news and articles
 background: blog/bg.png
 ---
-
-Blog page

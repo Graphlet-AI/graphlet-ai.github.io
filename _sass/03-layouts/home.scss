@@ -7,6 +7,7 @@
   max-width: 80%;
   margin: auto;
   font-weight: bold;
+  font-family: gotham-book;
 }
 .introduction {
   margin-top: -3rem;
@@ -15,7 +16,8 @@
   background-image: url("/assets/home/bg.png");
   background-size: cover;
   padding-bottom: 15%;
-  
+  font-family: gotham-light;
+
   > div {
     max-width: 80%;
     margin: auto;
@@ -33,12 +35,14 @@
   text-align: center;
   font-size: 35px;
   font-weight: 600;
+  font-family: gotham-book;
 }
 .problem-definition {
   font-size: 18px;
   background-image: url("/assets/home/bg2.jpg");
   background-size: contain;
   padding-bottom: 3rem;
+  font-family: gotham-light;
 
   > div {
     max-width: 80%;
@@ -80,13 +84,13 @@
   }
 }
 @media screen and (max-width: 1101px) {
-  #introduction{
+  #introduction {
     margin-top: 1rem;
     padding-top: 2rem;
   }
   .introduction {
     padding: 2rem;
-    text-align: justify;    
+    text-align: justify;
     background-repeat: no-repeat;
     padding-top: 10%;
     padding-bottom: 15%;
@@ -97,7 +101,7 @@
       padding: 0;
     }
 
-    .home-highlight{
+    .home-highlight {
       background-image: none;
       background-color: $main-color-dark;
       padding: 2rem;
@@ -124,10 +128,10 @@
     font-size: 35px;
     margin-top: 20%;
   }
-  .introduction{
+  .introduction {
     padding-bottom: 40%;
   }
-  .home-content{
+  .home-content {
     margin-top: -4rem;
     z-index: 1;
   }
@@ -136,12 +140,12 @@
   #introduction {
     margin-top: 0;
   }
-  .introduction{
+  .introduction {
     padding-bottom: 10%;
     background-image: none;
     background-color: $main-color;
   }
-  .home-content{
+  .home-content {
     margin-top: -2rem;
   }
 }

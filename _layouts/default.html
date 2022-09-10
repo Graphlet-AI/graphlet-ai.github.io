@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <style>
+    .site-bg {
+      background-image: url("{{site.baseurl}}/assets/{{page.background}}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+  </style>
 
-{%- include head.html -%}
-<style>
-  .site-bg {
-    background-image: url('{{site.baseurl}}/assets/{{page.background}}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
-</style>
+  <body>
+    {%- if page.title=="Home" -%} {%- include header_home.html -%} {%- assign
+    bg_class="home-content" -%} {%- else -%} {%- include header.html -%} {%-
+    assign bg_class="site-bg" -%} {%- endif -%}
 
-<body>
+    <main class="page-content {{bg_class}}" aria-label="Content">
+      {%- if page.title!="Home" -%}
+      <div class="custom-container">{{ content }}</div>
+      {%- else -%}
+      <div>{{ content }}</div>
+      {%- endif -%}
+    </main>
 
-  {%- if page.title=="Home" -%}
-  {%- include header_home.html -%}
-  {%- assign bg_class="home-content" -%}
-  {%- else -%}
-  {%- include header.html -%}
-  {%- assign bg_class="site-bg" -%}
-  {%- endif -%}
-
-  <main class="page-content {{bg_class}}" aria-label="Content">
-    {%- if page.title!="Home" -%}
-    <div class="custom-container">
-      {{ content }}
-    </div>
-    {%- else -%}
-    <div>
-      {{ content }}
-    </div>
-    {%- endif -%}
-  </main>
-
-  {%- include footer.html -%}
-
-</body>
+    {%- include footer.html -%}
+  </body>
 </html>
