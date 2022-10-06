@@ -5,6 +5,13 @@
   background-image: url("/assets/home/papers.jpg");
   background-size: cover;
 }
+.home-header-tagline {
+  background-image: url("/assets/header/graphlet tagline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+}
 .github-link {
   color: $main-color !important;
   font-weight: 700;
@@ -15,7 +22,7 @@
   align-items: center;
   gap: 3%;
   img {
-    width: 30%;
+    width: 25%;
   }
 }
 .home-heading {

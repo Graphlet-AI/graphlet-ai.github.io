@@ -105,6 +105,12 @@
 .error-msg-2 {
   height: 0.8rem;
 }
+@media screen and (min-width: 1440px) {
+  .contact {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 976px) {
   #mc_embed_signup .mc-field-group {
     width: -webkit-fill-available;

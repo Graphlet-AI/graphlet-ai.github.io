@@ -83,6 +83,11 @@
   content: none;
 }
 
+@media screen and (min-width: 1440px) {
+  .site-footer {
+    padding-top: 5%;
+  }
+}
 @media (max-width: 769px) {
   .footer-nav-list {
     margin: auto 2rem;

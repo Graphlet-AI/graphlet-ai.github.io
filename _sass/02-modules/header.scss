@@ -14,6 +14,7 @@ header{
   background-size: cover;
   padding: 3rem 0 10rem;
   background-repeat: no-repeat;
+  background-position: bottom;
   z-index: 1;
 }
 .custom-nav {
@@ -51,6 +52,11 @@ header{
   font-size: 30px;
   font-weight: 100;
   font-family: gotham-light;
+}
+@media screen and (min-width: 1440px) {
+  .header-bg {
+    padding-bottom: 10%;
+  }
 }
 @media screen and (max-width: 1201px) {
   .brand-logo {
