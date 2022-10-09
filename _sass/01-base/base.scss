@@ -6,7 +6,8 @@ body {
   font-family: gotham-book;
 }
 .custom-container {
-  margin: 0 10rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .page-content {
   padding: 5rem 0;
@@ -28,17 +29,8 @@ body {
 .custom-btn:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 1201px) {
-  .custom-container {
-    margin: 0 5rem;
-  }
-}
 
 @media screen and (max-width: 426px) {
-  .custom-container {
-    margin: 0 2rem;
-  }
-
   .site-bg {
     margin-top: -3rem;
   }

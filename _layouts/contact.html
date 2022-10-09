@@ -5,18 +5,8 @@ layout: default
 <article class="post">
   <div class="post-content">
     <div class="contact">
-      <div class="contact-tabs">
-        <span onclick="changeTab(0)" class="active-tab" id="hire-me">
-          Hire me
-        </span>
-        <span
-          onclick="changeTab(1)"
-          class="inactive-tab"
-          id="contribute-project"
-        >
-          Contribute to project
-        </span>
-      </div>
+      <h4>Tell your thoughts</h4>
+      <h2>Leave a message and I'll reach back to you</h2>
       <div class="contact-paper-bg">
         <!-- Begin Mailchimp Signup Form -->
         <link
@@ -34,8 +24,6 @@ layout: default
       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         </style>
         <div id="mc_embed_signup">
-          <p>Tell your thoughts</p>
-          <h2>Leave a message and I'll reach back to you</h2>
           <form
             action="https://graphlet.us13.list-manage.com/subscribe/post?u=6c005bae6f3bbff1c0470d7ee&amp;id=72d571d833&amp;f_id=0046c1e2f0"
             method="post"
@@ -46,8 +34,9 @@ layout: default
             novalidate
           >
             <div id="mc_embed_signup_scroll">
-              <div class="inputs-flex">
-                <div class="mc-field-group">
+              <div class="mc-field-group">
+                <label for="mce-FNAME">Full Name</label>
+                <div>
                   <div class="input-flex">
                     <input
                       type="text"
@@ -55,14 +44,17 @@ layout: default
                       name="FNAME"
                       class="required"
                       id="mce-FNAME"
-                      placeholder="Full name"
+                      placeholder="Jane Doe"
                       required
                     />
                     <span class="user-icon"></span>
                   </div>
                   <div class="error-msg"></div>
                 </div>
-                <div class="mc-field-group">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address</label>
+                <div>
                   <div class="input-flex">
                     <input
                       type="email"
@@ -70,46 +62,50 @@ layout: default
                       name="EMAIL"
                       class="required email"
                       id="mce-EMAIL"
-                      placeholder="Email address"
+                      placeholder="jane.doe@example.com"
                       required
                     />
                     <span class="email-icon"></span>
                   </div>
-
-                  <div class="error-msg"></div>
-                </div>
-                <div class="mc-field-group">
-                  <div class="input-flex">
-                    <input
-                      type="text"
-                      value=""
-                      name="SUBJECT"
-                      class="required"
-                      id="mce-SUBJECT"
-                      placeholder="Subject"
-                      required
-                    />
-                    <span class="tag-icon"></span>
-                  </div>
-
                   <div class="error-msg"></div>
                 </div>
               </div>
               <div class="mc-field-group">
-                <div class="input-flex">
-                  <textarea
+                <label for="mce-SUBJECT">Subject</label>
+                <div>
+                  <div class="input-flex">
+                    <input
                     type="text"
-                    rows="10"
                     value=""
-                    name="WORK"
+                    name="SUBJECT"
                     class="required"
-                    id="mce-WORK"
-                    placeholder="Work details"
+                    id="mce-SUBJECT"
+                    placeholder="Contribute to our project"
                     required
-                  ></textarea>
-                  <span class="pencil-icon"></span>
+                    />
+                    <span class="tag-icon"></span>
+                  </div>
+                  <div class="error-msg"></div>
+                  </div>
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-WORK">Work details</label>
+                <div>
+                  <div class="input-flex">
+                    <textarea
+                      type="text"
+                      rows="10"
+                      value=""
+                      name="WORK"
+                      class="required"
+                      id="mce-WORK"
+                      placeholder="Tell us more about your project, needs and timeline"
+                      required
+                    ></textarea>
+                    <span class="pencil-icon"></span>
+                  </div>
+                  <div class="error-msg-2"></div>
                 </div>
-                <div class="error-msg-2"></div>
               </div>
               <div id="mce-responses" class="clear foot">
                 <div
@@ -166,35 +162,7 @@ layout: default
           })(jQuery);
           var $mcj = jQuery.noConflict(true);
         </script>
-        <script type="text/javascript">
-          var changeTab = function (num) {
-            var list1 = document.getElementById("mc_embed_signup").classList;
-            var list2 = document.getElementById("contribute").classList;
-            var hire_btn = document.getElementById("hire-me");
-            var contribute_btn = document.getElementById("contribute-project");
-
-            if (num == 0) {
-              list1.remove("contact-hide");
-              list2.add("contact-hide");
-              hire_btn.classList.add("active-tab");
-              hire_btn.classList.remove("inactive-tab");
-              contribute_btn.classList.add("inactive-tab");
-              contribute_btn.classList.remove("active-tab");
-            } else {
-              list2.remove("contact-hide");
-              list1.add("contact-hide");
-              hire_btn.classList.remove("active-tab");
-              hire_btn.classList.add("inactive-tab");
-              contribute_btn.classList.remove("inactive-tab");
-              contribute_btn.classList.add("active-tab");
-            }
-          };
-        </script>
         <!--End mc_embed_signup-->
-        <div id="contribute" class="contact-hide">
-          <h3>Contribute to Graphlet AI</h3>
-          <a href="/github">GitHub</a>
-        </div>
       </div>
     </div>
   </div>
