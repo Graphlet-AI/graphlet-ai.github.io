@@ -35,6 +35,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 bundle install
 ```
 
+## Serving the Site Locally
+
 - Go into /graphlet_ai and run the command
 
 ```bash
@@ -47,4 +49,4 @@ The site will serve on [localhost:4000](http://localhost:4000)
 
 ## Usage
 
-Click here to open this website hosted on Github Pages : [insert URL]
+Click here to open this website hosted on Github Pages : [https://graphlet-ai.github.io/](https://graphlet-ai.github.io/)
