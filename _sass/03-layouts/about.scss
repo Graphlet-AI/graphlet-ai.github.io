@@ -31,9 +31,11 @@
 .CEO-contact {
   text-align: center;
   margin: 5rem;
+  h3{
+    margin: 0;
+  }
   button {
-    font-size: 15px;
-    margin: 1rem auto;
+    margin: 2rem auto;
     background-color: transparent;
     width: 100%;
   }

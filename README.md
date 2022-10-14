@@ -41,6 +41,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
+To reload automatically with sass changes, run
+```
+bundle exec jekyll serve --livereload
+```
+
+
 The site will serve on [localhost:4000](http://localhost:4000)
 
 - Note: in _config.yaml, baseurl should be empty ""
