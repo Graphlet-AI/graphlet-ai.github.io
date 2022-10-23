@@ -13,7 +13,7 @@
   margin-top: -3rem;
   color: white;
   font-size: 18px;
-  background-image: url("/assets/home/bg.png");
+  background-image: url('/assets/home/bg.png');
   background-size: cover;
   padding-bottom: 10%;
   font-family: gotham-light;
@@ -24,11 +24,15 @@
   }
   .home-highlight {
     padding: 6rem;
-    background-image: url("/assets/home/paper bg dark.png");
+    background-image: url('/assets/home/paper bg dark.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+.home-content {
+  z-index: 2;
+  margin-top: -4rem;
 }
 #problem-definition {
   margin-top: 3rem;
@@ -39,7 +43,7 @@
 }
 .problem-definition {
   font-size: 18px;
-  background-image: url("/assets/home/bg2.jpg");
+  background-image: url('/assets/home/bg2.jpg');
   background-size: contain;
   padding-bottom: 3rem;
   font-family: gotham-light;
@@ -75,7 +79,7 @@
 }
 .paper-bg {
   padding: 2rem 6rem;
-  background-image: url("/assets/home/paper bg.png");
+  background-image: url('/assets/home/paper bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,6 +143,9 @@
   .paper-bg {
     padding: 2rem 3rem;
   }
+  .home-content {
+    margin-top: -5rem;
+  }
 }
 @media screen and (max-width: 426px) {
   #introduction {
@@ -149,8 +156,7 @@
     padding-bottom: 40%;
   }
   .home-content {
-    margin-top: -4rem;
-    z-index: 1;
+    margin-top: -7rem;
   }
 }
 @media screen and (max-width: 376px) {
