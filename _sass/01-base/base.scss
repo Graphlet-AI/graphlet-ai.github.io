@@ -1,6 +1,6 @@
-@import "./variables.scss";
-@import "./icons.scss";
-@import "./fonts.scss";
+@import './variables.scss';
+@import './icons.scss';
+@import './fonts.scss';
 
 body {
   font-family: gotham-book;
@@ -14,7 +14,7 @@ body {
   margin-top: -3rem;
 }
 .custom-btn {
-  background-image: url("/assets/header/btn.png");
+  background-image: url('/assets/header/btn.png');
   margin: 4rem auto 4rem;
   padding: 1rem 2rem;
   border: 0px;
