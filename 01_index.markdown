@@ -150,3 +150,64 @@ background: home/bg.png
     </li>
 
 </div>
+
+<div>
+    <h2 id="problem-definition">What will students learn?</h2>
+
+    Students will go from a working knowledge of data science and machine learning with data tables to a working knowledge of data science and machine learning for graphs to build real world applications. It is not enough to teach students graph neural networks (GNNs) - they need to work their way up from graph theory to GNNs using common Python tools in design patterns based on real world use cases.
+
+    Students will learn to:
+
+    <li>
+        <ul>Build and extend knowledge graphs using natural language processing (NLP) named entity recognition (NER), information</ul>
+        <ul>Extraction and entity linking</ul>
+        <ul>Describe social networks using social network analysis (SNA)</ul>
+        <ul>Describe and analyze any network using network science</ul>
+        <ul>Perform graph analytics on both property graph and RDF triple store / SPARQL databases</ul>
+        <ul>Find significant patterns in real world networks</ul>
+        <ul>Build predictive systems using traditional ML</ul>
+        <ul>Replace manual feature engineering with graph embeddings</ul>
+        <ul>Solve a range of problems using graph neural networks</ul>
+        <ul>Build a full stack app for visualizing explainable GNN models</ul>
+    </li>
+</div>
+
+<div>
+    <h2 id="problem-definition">Course Instructor</h2>
+
+    My name is Russell Jurney. I work at the intersection of big data, large networks - property graphs or knowledge graphs, representation learning with Graph Neural Networks (GNNs), Natural Language Processing (NLP) and Understanding (NLU), model explainability using network visualization and vector search for information retrieval.
+
+    I am a startup product and engineering executive focused on building products driven by billion node+ networks. I have worked at cool places like Ning, LinkedIn and Hortonworks. I co-founded Deep Discovery to use networks, GNNs and visualizations to build an explainable risk score for KYC / AML.
+
+    I am a four-time O'Reilly author with 120 citations on Google Scholar for being the first to write about “agile data science” - agile development as applied to data science and machine learning. I am an applied researcher and product manager with 17 years of experience building and shipping data-driven products.
+
+    I am currently fascinated by knowledge graph / property graph construction, graph representation learning, graph neural networks (GNNs), NLP/NLU techniques such as information extraction, named entity resolution (NER), coreference resolution, fact extraction, and entity linking. I do network science and machine learning - so I get stuff done :)
+
+    Check out my network science portfolio, my blog and my O’Reilly Radar posts.
+</div>
+
+<div>
+    <h2 id="problem-definition">Course Outline</h2>
+
+    The course is divided into two sections: theory and practice.
+
+    The theory portion introduces theoretical models for the course’s content along with real-world examples from science and industry of their use. If you don’t know the basis and relevance of a technique - why learn it?
+
+    The practice portion works through the everyday work of implementing the topics covered in the first day using the most popular, effective tools for graph processing, graph databases and graph machine learning. We focus on Python but do a little R.
+
+</div>
+
+<div>
+    <h2 id="problem-definition">Theory: Graphs, SNA, Network Science, Graph ML, GNNs</h2>
+
+       We start with a review of graph theory and present simple, intuitive, visual and mathematical explanations of topics such as graph data models, social network analysis (SNA), network science, graph analytics, pattern machine and traditional and GNN machine learning methods. We also introduce knowledge graph construction using natural language processing.
+
+    <li>
+        <ul>Graph theory - what is a graph? Examples of networks? Heterogeneous networks can model anything!</ul>
+        <ul>Data models - property graphs (yaaah!) vs RDF triple stores + SPARQL</ul>
+    </li>
+
+
+</div>
+
+</div>
