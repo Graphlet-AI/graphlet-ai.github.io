@@ -18,7 +18,7 @@ background: home/bg.png
     <div>
         <div>
         </div>
-        <div class="home-highlight">
+        <div>
             <div>
                 Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
             </div>
@@ -159,7 +159,6 @@ background: home/bg.png
         <div>
             We can build knowledge graphs for any platform, but here are a few tools that are more up our alley to create business value using graphs and networks:
         </div>
-        <div style="margin-top: 2%;"></div>
         <li>
             <ul>Python tools like <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://networkx.org/">NetworkX</a>, <a href="https://graph-tool.skewed.de/">graph-tool</a>, <a href="https://networkit.github.io/">NetworKit</a> or <a href="https://www.graphifi.com/easygraph">EasyGraph</a></ul>
             <ul><a href="https://www.r-project.org/">R</a> tools like <a href="https://igraph.org/">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/">ggraph</a></ul>
@@ -175,7 +174,8 @@ background: home/bg.png
     </div>
     <div>
         <div style="margin-top: 2%;"></div>
-        <h2>Principal Consultant</h2>
+        <h2>Our Principal Consultant, <a href="https://www.linkedin.com/in/russelljurney/">Russell Jurney</a></h2>
+        <img align="left" style="margin-left: 0%; margin-right: 2%; width: 17%" src="assets/home/russell_jurney_headshot.jpg" alt="The beautiful face of Russell Jurney. Bald. Shiny." />
         <div>
             My name is Russell Jurney. I work at the intersection of big data, large networks - property graphs or knowledge graphs, representation learning with Graph Neural Networks (GNNs), Natural Language Processing (NLP) and Understanding (NLU), model explainability using network visualization and vector search for information retrieval.
             I am a startup product and engineering executive focused on building products driven by billion node+ networks. I have worked at cool places like Ning, LinkedIn and Hortonworks. I co-founded Deep Discovery to use networks, GNNs and visualizations to build an explainable risk score for KYC / AML.
@@ -184,6 +184,7 @@ background: home/bg.png
         <div>
             I am a four-time O'Reilly author with 122 citations on Google Scholar for being the first to write about “agile data science” - agile development as applied to data science and machine learning. I am an applied researcher and product manager with 17 years of experience building and shipping data-driven products.
         </div>
+        <div style="margin-top: 2%;"></div>
         <div>
             I am currently fascinated by knowledge graph / property graph construction, graph representation learning, graph neural networks (GNNs), NLP/NLU techniques such as information extraction, named entity resolution (NER), coreference resolution, fact extraction, and entity linking. I do network science and machine learning - so I get stuff done :)
             Check out my network science portfolio, my blog and my O’Reilly Radar posts.
