@@ -24,25 +24,41 @@ background: home/bg.png
 </div>
 <div class="problem-definition">
     <div>
-        <h2 id="problem-definition">We build knowledge graph <i>factories</i>.</h2>
+        <h2 id="problem-definition">We build knowledge graph <i>factories</i></h2>
         <div>
             <center>
-                <img style="width: 90%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
+                <img style="width: 90%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
             </center>
         </div>
-        <h2 id="problem-definition">We build property graphs in 3 steps.
-</h2>
-        <div style="margin-bottom: 5%;">1) Transform myriad datasets into a common ontology. This means we Extract, Transform, Load (ETL) [or ELT] multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, PySpark, Databricks or Snowflake. How much ETL varies by industry from minimal with cybersecurity applications to simplified graph model with fewer makes it easy to access, query, analyze and model in a graph database such as Neo4j, TigerGraph or Neptune.</div>
+        <h2 id="problem-definition">We build <i>property graphs</i> in 3 steps</h2>
+        <div style="margin-bottom: 2%;">1) Transform myriad datasets into a common ontology. This means we Extract, Transform, Load (ETL) [or ELT] multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, PySpark, Databricks or Snowflake. How much ETL varies by industry from minimal with cybersecurity applications to simplified graph model with fewer makes it easy to access, query, analyze and model in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.</div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-1-Bronze-ETL.png" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
+            </center>
+        </div>
     </div>
-    <div style="margin-top: -3%;" >
+    <div style="margin-top: 0%;" >
     </div>
     <div class="problem-definition">
+        <h2 id="problem-definition">What is a property graph, knowledge graph and triple store?</h2>
+        <div>
+            A property graph is a set of objects representing nodes [also known as vertex/vertices] and edges [also known as links].
+        </div>
         <h2 id="problem-definition">Why should I build a knowledge graph for my business?</h2>
-        I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+        <div>I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+        </div>
     </div>
     <div class="problem-definition">
         <h2 id="problem-definition">What’s the real story with Graph Neural Networks (GNNs)?</h2>
-        I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+        <div>I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+        </div>
     </div>
     <!--<div class="problem-definition">
         <h2 id="problem-definition">Course Description</h2>
@@ -53,7 +69,6 @@ background: home/bg.png
             <img style="width: 900px;" alt="GNN Problem Types" src="assets/home/different_types_of_networks.png">
         </center>
     </div>
-    
     <!--<div>
         We will introduce common Python and R tools for graph analytics and graph machine learning as well as the most popular graph databases. We will focus on property graphs but will also compare them with RDF / triple stores using SPARQL. We will cover the core methods from social network analysis and network science that will guide your informed-intuition in doing graph machine learning. We will build a knowledge graph using natural language processing (NLP), combine its duplicate nodes using deep networks for entity resolution and mine the resulting graph for patterns. Finally, we will build a full-stack graph ML application that shows network visualizations of explainable GNNs for chemical engineering.
         You will graduate from the course able to work with graphs as you now work with tables and DataFrames.
@@ -94,7 +109,7 @@ background: home/bg.png
             <ul><a href="https://www.r-project.org/">R</a> tools like <a href="https://igraph.org/">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/">ggraph</a></ul>
             <ul>Big data tools like <a href="https://spark.apache.org/docs/latest/api/python/">PySpark</a>, <a href="https://www.databricks.com/">Databricks</a>, <a href="https://www.dask.org/">Dask</a>, <a href="https://www.snowflake.com/en/">Snowflake</a>  or <a href="https://graphframes.github.io/graphframes/docs/_site/index.html">GraphFrames</a></ul>
             <ul>GPU-accelerated compute tools like RAPIDS <a href="https://github.com/rapidsai/cugraph">cuGraph</a></ul>
-            <ul>Property graph databases like <a href="https://neo4j.com/">Neo4j</a>, <a href="https://www.tigergraph.com/">TigerGraph</a>, <a href="https://www.oracle.com/">Oracle Graph Studio</a> or Oracle Graph Studio</ul>
+            <ul>Property graph databases like <a href="https://neo4j.com/">Neo4j</a>, <a href="https://www.tigergraph.com/">TigerGraph</a>, <a href="https://www.arangodb.com/graph-database/">ArangoDB</a>, <a href="https://www.oracle.com/">Oracle Graph Studio</a> or Oracle Graph Studio</ul>
             <ul>Enterprise knowledge graphs that use RDF Triple Stores / SPARQL like <a href="https://www.stardog.com/">StarDog</a> or <a href="https://www.ontotext.com/">Ontotext</a></ul>
             <ul>Large knowledge bases like <a href="https://query.wikidata.org/">WikiData Query Service</a></ul>
             <ul><a href="https://jupyter.org/">Jupyter</a>, <a href="https://www.databricks.com/">Databricks</a> and <a href="https://www.snowflake.com/en/">Snowflake</a> Notebooks</ul>
