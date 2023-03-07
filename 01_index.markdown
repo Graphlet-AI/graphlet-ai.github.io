@@ -86,7 +86,7 @@ background: home/bg.png
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-            Manual blocking and matching for numerous datasets is a cumbrsome and expensive activity. Advances in AI - representation learning and an architecture from Google called Grale - make a generic entity resolution (ER) system possible. This system is configurable to work across multiple datasets by embedding records using large language models (LLMs) such as GPT-3 or ChatGPT, but tuned specifically for the entity matching task.
+            Manual blocking and matching for numerous datasets is a cumbersome and expensive activity. Advances in AI - representation learning and an architecture from Google called Grale - make a generic entity resolution (ER) system possible. This system is configurable to work across multiple datasets by embedding records using large language models (LLMs) such as GPT-3 or ChatGPT, but tuned specifically for the entity matching task.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -119,6 +119,18 @@ background: home/bg.png
     <div style="margin-top: 3%;" >
     </div>
     <div>
+        <h2>Can a graph model my data?</h2>
+        <div>
+            Property graphs can represent data from any database you throw at them.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 900px;" alt="Simple vs property graphs" src="assets/home/types_of_graph.png">
+            </center>
+        </div>
+    </div>
+    <div>
         <h2>What is a property graph, knowledge graph and triple store?</h2>
         <div>
             A property graph is a set of objects representing nodes [also known as vertex/vertices] and edges [also known as links].
@@ -132,27 +144,14 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <h2>Why should I build a knowledge graph for my business?</h2>
         <div>
-            I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+            I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Knowledge graphs modeled using graph machine learning (Graph ML) and graph neural networks (GNNs) are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 900px;" alt="" src="assets/home/types_of_graph.png">
+                <img style="width: 900px;" alt="Networks vs sequence representations. Networks preserve inherent relational bias of data" src="assets/home/different_types_of_networks.png">
             </center>
         </div>
-    </div>
-    <!-- Next section -->
-    <div>
-        <div style="margin-top: 2%;"></div>
-        <h2>What’s the real story with Graph Neural Networks (GNNs)?</h2>
-        <div>I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
-        </div>
-        <div style="margin-top: 2%;"></div>
-            <div>
-                <center>
-                    <img style="width: 900px;" alt="Property Graphs vs Triple Stores: Reification, making objects out of properties" src="assets/home/different_types_of_networks.png">
-                </center>
-            </div>
     </div>
     <div>
         <div style="margin-top: 2%;"></div>
