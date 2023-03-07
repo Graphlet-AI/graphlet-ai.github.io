@@ -13,12 +13,23 @@ background: home/bg.png
 ---
 
 <div class="introduction">
+    <div style="margin-top: -5%;"></div>
     <h2 id="introduction">Knowledge Graph Construction</h2>
     <div>
         <div>
         </div>
         <div class="home-highlight">
-            Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints. We use big data tools and go beyond simple ETL by using machine learning and artificial intelligence to construct a graph model of your business domain that maps closely to solutions to your business problems. Using a modern graph database, your data science and machine learning teams can then efficiently mine this refined graph to find solutions to your most pressing data science problems.
+            <div>
+                Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
+            </div>
+            <div style="margin-top: 2%;"></div>
+            <div>
+                We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints.
+            </div>
+            <div style="margin-top: 2%;"></div>
+            <div>
+                We love big data and large networks. We use big data tools to scale data pipelines that go beyond traditional ETL and entity resolution using artificial intelligenecs - graph machine learning - to construct a high fidelity network model of your business domain that maps directly to solutions to your business problems. It lets you run the queries that answer problems vexing you and driving features your customers demand. Using a modern graph database, your data science and machine learning teams can then efficiently mine this refined graph to find solutions to your most pressing data science problems.
+            </div>
         </div>
     </div>
 </div>
@@ -28,7 +39,7 @@ background: home/bg.png
         <h2>We build knowledge graph <i>factories</i></h2>
         <div>
             <center>
-                <img style="width: 80%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
+                <img style="width: 70%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
             </center>
         </div>
         <div style="margin-top: 3%;"></div>
@@ -40,13 +51,13 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-1-Bronze-ETL.png" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-1-Bronze-ETL.png" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
+                <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
             </center>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -60,13 +71,13 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Blocking.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Blocking.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
@@ -80,25 +91,25 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution---Ditto-Encoding.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution---Ditto-Encoding.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Embedding-Distance.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Embedding-Distance.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
+                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
@@ -115,7 +126,7 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 80%;" alt="Property graphs vs RDF Triples. Both are knowledge graphs." src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
+                <img style="width: 70%;" alt="Property graphs vs RDF Triples. Both are knowledge graphs." src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
@@ -149,6 +160,7 @@ background: home/bg.png
         <div>
             We can build knowledge graphs for any platform, but here are a few tools that are more up our alley to create business value using graphs and networks:
         </div>
+        <div style="margin-top: 2%;"></div>
         <li>
             <ul>Python tools like <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://networkx.org/">NetworkX</a>, <a href="https://graph-tool.skewed.de/">graph-tool</a>, <a href="https://networkit.github.io/">NetworKit</a> or <a href="https://www.graphifi.com/easygraph">EasyGraph</a></ul>
             <ul><a href="https://www.r-project.org/">R</a> tools like <a href="https://igraph.org/">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/">ggraph</a></ul>
@@ -163,13 +175,15 @@ background: home/bg.png
         </li>
     </div>
     <div>
+        <div style="margin-top: 2%;"></div>
         <h2>Principal Consultant</h2>
         <div>
             My name is Russell Jurney. I work at the intersection of big data, large networks - property graphs or knowledge graphs, representation learning with Graph Neural Networks (GNNs), Natural Language Processing (NLP) and Understanding (NLU), model explainability using network visualization and vector search for information retrieval.
             I am a startup product and engineering executive focused on building products driven by billion node+ networks. I have worked at cool places like Ning, LinkedIn and Hortonworks. I co-founded Deep Discovery to use networks, GNNs and visualizations to build an explainable risk score for KYC / AML.
         </div>
+        <div style="margin-top: 2%;"></div>
         <div>
-            I am a four-time O'Reilly author with 120 citations on Google Scholar for being the first to write about “agile data science” - agile development as applied to data science and machine learning. I am an applied researcher and product manager with 17 years of experience building and shipping data-driven products.
+            I am a four-time O'Reilly author with 122 citations on Google Scholar for being the first to write about “agile data science” - agile development as applied to data science and machine learning. I am an applied researcher and product manager with 17 years of experience building and shipping data-driven products.
         </div>
         <div>
             I am currently fascinated by knowledge graph / property graph construction, graph representation learning, graph neural networks (GNNs), NLP/NLU techniques such as information extraction, named entity resolution (NER), coreference resolution, fact extraction, and entity linking. I do network science and machine learning - so I get stuff done :)
