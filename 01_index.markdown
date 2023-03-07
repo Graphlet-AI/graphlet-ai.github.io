@@ -42,7 +42,62 @@ background: home/bg.png
             <center>
                 <img style="width: 90%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
             </center>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <b>2)</b> Extract a graph from text using Natural Language Processing (NLP) via a chain of operations: NER —> IE —> EL. Named entity recognition (NER) points out entities corresponding to nodes. Information Extraction (IE) creates relationships [edges] between entities. Entity linking links nodes and edges extracted from text documents into single into a core graph established via ETL.
         </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            Initially a process of exploratory data analysis (EDA) reveals patterns that can be used to handle the combinatoric problems arising from the need in entity matching to compare every node in the graph with every node. The complexity of this comparison is n^2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Blocking.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <b>3)</b> Entity resolution using network topology and natural language processing. Recent developments in Large Language Models [LLMs] and Graph Neural Networks (GNNs) allow us to encode nodes and edges as XML-like text using a language model and then combine them based on semantic inferences made by the LLM in combination with those made about the network via a GNN. LLMs have seen many similar documents as the nodes’ text representation on the world wide web.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            Manual blocking and matching for numerous datasets is a cumbrsome and expensive activity. Advances in AI - representation learning and an architecture from Google called Grale - make a generic entity resolution (ER) system possible. This system is configurable to work across multiple datasets by embedding records using large language models (LLMs) such as GPT-3 or ChatGPT, but tuned specifically for the entity matching task.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution---Ditto-Encoding.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Embedding-Distance.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 2%;"></div>
     </div>
     <div style="margin-top: 0%;" >
     </div>
@@ -51,24 +106,32 @@ background: home/bg.png
         <div>
             A property graph is a set of objects representing nodes [also known as vertex/vertices] and edges [also known as links].
         </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 900px;" alt="Property Graphs vs Triple Stores: Reification, making objects out of properties" src="assets/home/different_types_of_networks.png">
+            </center>
+        </div>
         <h2 id="problem-definition">Why should I build a knowledge graph for my business?</h2>
-        <div>I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
+        <div>
+            I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
     </div>
+    <!-- Next section -->
     <div class="problem-definition">
         <h2 id="problem-definition">What’s the real story with Graph Neural Networks (GNNs)?</h2>
         <div>I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Graph neural networks are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
     </div>
+        <div>
+            <center>
+                <img style="width: 90%;" alt="Raw Data in Bronze Tables" src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
+            </center>
+        </div>
     <!--<div class="problem-definition">
         <h2 id="problem-definition">Course Description</h2>
         In this course, we will take the skills you've developed in working with data tables and DataFrames and extend them to cover graphs, networks, knowledge graphs, property graphs and graph databases. We will work with different types of graphs from across problem domains. This includes natural networks like social networks, collaboration networks or communications networks as well as structural networks like the plan of a Python program or the 3D mesh of a model of a 3-dimensional scene.
     </div>-->
-    <div>
-        <center>
-            <img style="width: 900px;" alt="GNN Problem Types" src="assets/home/different_types_of_networks.png">
-        </center>
-    </div>
     <!--<div>
         We will introduce common Python and R tools for graph analytics and graph machine learning as well as the most popular graph databases. We will focus on property graphs but will also compare them with RDF / triple stores using SPARQL. We will cover the core methods from social network analysis and network science that will guide your informed-intuition in doing graph machine learning. We will build a knowledge graph using natural language processing (NLP), combine its duplicate nodes using deep networks for entity resolution and mine the resulting graph for patterns. Finally, we will build a full-stack graph ML application that shows network visualizations of explainable GNNs for chemical engineering.
         You will graduate from the course able to work with graphs as you now work with tables and DataFrames.
