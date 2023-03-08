@@ -14,25 +14,24 @@ background: home/bg.png
 
 <div class="introduction">
     <div style="margin-top: -5%;"></div>
-        <h2 id="introduction">Knowledge Graph Construction</h2>
+    <h2 id="introduction">Knowledge Graph Construction</h2>
+    <div>
         <div>
-            <div>
-                Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
-            </div>
-            <div style="margin-top: 2%;"></div>
-            <div>
-                We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints.
-            </div>
-            <div style="margin-top: 2%;"></div>
-            <div>
-                We love big data and large networks. We use big data tools to scale data pipelines that go beyond traditional ETL and entity resolution using artificial intelligenecs - graph machine learning - to construct a high fidelity network model of your business domain that maps directly to solutions to your business problems. It lets you run the queries that answer problems vexing you and driving features your customers demand. Using a modern graph database, your data science and machine learning teams can then efficiently mine this refined graph to find solutions to your most pressing data science problems.
-            </div>
+            Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            We love big data and large networks. We use big data tools to scale data pipelines that go beyond traditional ETL and entity resolution using artificial intelligenecs - graph machine learning - to construct a high fidelity network model of your business domain that maps directly to solutions to your business problems. It lets you run the queries that answer problems vexing you and driving features your customers demand. Using a modern graph database, your data science and machine learning teams can then efficiently mine this refined graph to find solutions to your most pressing data science problems.
         </div>
     </div>
 </div>
 <div class="problem-definition">
     <div>
-        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 4%;"></div>
         <h2>We build knowledge graph <i>factories</i></h2>
         <div>
             <center>
