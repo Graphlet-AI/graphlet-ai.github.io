@@ -14,10 +14,7 @@ background: home/bg.png
 
 <div class="introduction">
     <div style="margin-top: -5%;"></div>
-    <h2 id="introduction">Knowledge Graph Construction</h2>
-    <div>
-        <div>
-        </div>
+        <h2 id="introduction">Knowledge Graph Construction</h2>
         <div>
             <div>
                 Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
@@ -117,11 +114,23 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
     </div>
     <div style="margin-top: 3%;" >
+    <div>
+        <h2>What is a network motif? Can you search for patterns in graphs / networks?</h2>
+    </div>
     </div>
     <div>
-        <h2>Can a graph model my data?</h2>
+        <h2>How can a graph model my data?</h2>
         <div>
-            Property graphs can represent data from any database you throw at them.
+            Property graphs can represent data from any database you throw at them. They are objects and their relationships just like the world around us. Objects have properties just like a baseball has a width. Relationships can as well, just like a pitch between a pitcher and batter has a speed.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 70%;" alt="Property graph model" src="assets/slides/Property-Graph-Models.jpg" />
+            </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -131,6 +140,7 @@ background: home/bg.png
         </div>
     </div>
     <div>
+        <div style="margin-top: 2%;"></div>
         <h2>What is a property graph, knowledge graph and triple store?</h2>
         <div>
             A property graph is a set of objects representing nodes [also known as vertex/vertices] and edges [also known as links].
@@ -141,7 +151,7 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Property graphs vs RDF Triples. Both are knowledge graphs." src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
             </center>
         </div>
-        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 3%;"></div>
         <h2>Why should I build a knowledge graph for my business?</h2>
         <div>
             I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Knowledge graphs modeled using graph machine learning (Graph ML) and graph neural networks (GNNs) are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
