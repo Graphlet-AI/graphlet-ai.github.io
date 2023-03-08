@@ -125,17 +125,18 @@ background: home/bg.png
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-        </div>
-        <div style="margin-top: 2%;"></div>
-        <div>
             <center>
                 <img style="width: 70%;" alt="Property graph model" src="assets/slides/Property-Graph-Models.jpg" />
             </center>
         </div>
+        <div style="margin-top: 4%;"></div>
+        <div>
+            You may be used to thinking of graphs as simple, mathematical concepts but property graphs have different types of nodes and edges that are much more powerful for data science and artificial intelligence than simple graphs are.
+        </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 900px;" alt="Simple vs property graphs" src="assets/home/types_of_graph.png">
+                <img style="width: 900px;" alt="Simple vs property graphs" src="assets/slides/Heterogeneous-Graph-Diagram.png">
             </center>
         </div>
     </div>
@@ -152,7 +153,7 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 3%;"></div>
-        <h2>Why should I build a knowledge graph for my business?</h2>
+        <h2>What is graph machine learning? What is a GNN?</h2>
         <div>
             I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Knowledge graphs modeled using graph machine learning (Graph ML) and graph neural networks (GNNs) are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
