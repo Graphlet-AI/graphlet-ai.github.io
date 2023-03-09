@@ -17,11 +17,7 @@ background: home/bg.png
     <h2 id="introduction">Knowledge Graph Construction</h2>
     <div>
         <div>
-            Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data.
-        </div>
-        <div style="margin-top: 2%;"></div>
-        <div>
-            We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints.
+            Graphlet AI is a data engineering, data science and artificial intelligence consultancy specializing in <i>knowledge graph construction</i>, also known as <b>property graph construction</b>. We build data pipelines that take raw data and feed your graph database clean data. We transform and refine raw data on your data lake to build large networks ranging in the millions, billions or even trillions of nodes and edges that model entire business domains to solve complex problems with global footprints.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -38,16 +34,25 @@ background: home/bg.png
                 <img style="width: 70%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
             </center>
         </div>
-        <div style="margin-top: 3%;"></div>
-        <h2>We build <i>property graphs</i> in 3 steps...</h2>
+        <div style="margin-top: 4%;"></div>
+        <h2>Property graph factories build <i>property graphs</i> in <b>4 steps</b>...</h2>
         <div style="margin-top: 2%;"></div>
-        <h3>Extract, Transform, Load (ETL): Common Formats</h3>
+        <h3>Step 1) Extract, Transform, Load Datasets to a Common Format</h3>
         <div>
-            <b>1)</b> Build the core of a graph by combining more than one structured datasets into a common schema or in larger domains, a full blown ontology. We Extract, Transform, Load (ETL) multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, Spark, Databricks or Snowflake. How much ETL varies by industry from relatively little in cybersecurity applications to a significant amount with business graph applications like KYC /AML / financial compliance. A well defined graph model with fewer makes it easy to access, query, analyze and model your business domain in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
+            The first step in building an enterprise knowledge graph is to build the raw node and edge lists making up your network by combining multiple, structured datasets from your organization into a common schema. In larger domains this will warrant a full blown ontology, but starting with a smaller network and building out one use case is a good strategy.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            We Extract, Transform, Load (ETL) multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, Spark, Databricks or Snowflake. How much ETL varies by industry from relatively little in cybersecurity applications to a significant amount with business graph applications like KYC /AML / financial compliance. A well defined graph model with fewer makes it easy to access, query, analyze and model your business domain in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
             Why not load your raw data directly into a graph database and do ETL inside it? Graph databases aren't ETL platforms. They are not designd for it. Python based tools are. Modern ETL increasingly involves using machine learning techniques rather than simple transformations. Graph databases are typically build on top of the Java Virtual Machine (JVM) or C++. Ask your data engineers how productive they will be doing ETL in Python versus Java or C++. Python shines at ETL. The JVM and C++ shine at interactively querying clean graph data.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <h4>Adding Unstructured Data</h4>
+        <div>
+            Once a core knowledge graph built from structured datasets is established, then it is time to bring in unstructured datasets to extend that network to a larger knowledge base using Natural Language Processing (NLP). Starting with unstructured data can be much more difficult - there is no anchor on which to peg the entities [nodes] and relationships [edges] you extract from text.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -60,16 +65,19 @@ background: home/bg.png
             <center>
                 <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
             </center>
-        <div style="margin-top: 2%;"></div>
-        <h3>Entity Resolution (ER): Deduplication</h3>
+        <div style="margin-top: 3%;"></div>
+        <h3>Step 2) Entity Resolution (ER): Manual Deduplication</h3>
         <div>
             Entity Resolution (ER) is the process of deduplicating and combining duplicate nodes and splitting up mistakenly merged nodes. In a similar manner, edges can also be merged or split up.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-            Traditional entity resolution involves two phases: blocking and matching. Initially a process of exploratory data analysis (EDA) reveals blocking patterns that can help group data to help limit the number of comparisons between records during the matching phase. The naive complexity of every node to every other comparison is n^2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
+            Traditional entity resolution involves two phases: blocking and matching. Querying data as part of exploratory data analysis (EDA) reveals strategies to match records. This was traditionally done by hand, and it still can be for a limited number of small datasets.
         </div>
         <div style="margin-top: 2%;"></div>
+        <div>
+            The next step is to compare records for matching. This presents a problem. The naive complexity of comparing every node with every other node is n^2 / 2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
+        </div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
@@ -83,8 +91,13 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
+        <h3>Step 3) Entity Resolution (ER): Automatic Deduplication</h3>
         <div>
-            <b>2)</b> Entity resolution using network topology and natural language processing. Recent developments in Large Language Models [LLMs] and Graph Neural Networks (GNNs) allow us to encode nodes and edges as XML-like text using a language model and then combine them based on semantic inferences made by the LLM in combination with those made about the network via a GNN. LLMs have seen many similar documents as the nodes’ text representation on the world wide web.
+            When dealing with big data, especially when there are a a number of datasets large and small, the traditional entity resolution model of manual blocking and matching starts to break down. It is cumbersome and takes too much developer time. What is needed is a <i>generic approach to entity resolution</i>.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>    
+            Recent developments in Large Language Models [LLMs] like <a href="https://chat.openai.com/chat/">ChatGPT</a> and Graph Neural Networks (GNNs) allow us to ETL nodes and edges into XML-like text and sentence encode them using a large language model and then combine them based on semantic inferences made by the LLM in combination with the network topology. LLMs have seen many similar documents as the nodes’ text representation on the world wide web, and if we provide a few clues... they provide state of the art entity resolution for both the blocking and matching stages!
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -102,10 +115,6 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
             </center>
         </div>
-        <div>
-            <b>3)</b> Enlarge the core knowledge graph from unstructured data sources using Natural Language Processing (NLP) via a chain of operations: NER —> IE —> EL. Named Entity Recognition (NER) points out entities corresponding to nodes. Information Extraction (IE) creates relationships [edges] between entities. Entity Linking links nodes and edges extracted from text documents into single into a core graph established via ETL.
-        </div>
-        <div style="margin-top: 2%;"></div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
@@ -119,7 +128,11 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
+        <h3>Step 4) Pattern Matching: Network Motif Search</h3>
         <div style="margin-top: 2%;"></div>
+        <div>
+            While it is nice to think that a single version of your data can be encoded in a graph, the reality is that you must make decisions as to which business logic to encode in the representation you choose for your knowledge graph.
+        </div>
         <div style="margin-top: 2%;"></div>
     </div>
     <div style="margin-top: 3%;" >
