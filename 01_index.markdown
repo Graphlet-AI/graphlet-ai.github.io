@@ -31,7 +31,7 @@ background: home/bg.png
 </div>
 <div class="problem-definition">
     <div>
-        <div style="margin-top: 4%;"></div>
+        <div style="margin-top: 3%;"></div>
         <center><h2>We build property graph <i>factories</i></h2></center>
         <div>
             <center>
@@ -39,10 +39,11 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 3%;"></div>
-        <h2>We build <i>property graphs</i> in 3 steps</h2>
+        <h2>We build <i>property graphs</i> in 3 steps...</h2>
         <div style="margin-top: 2%;"></div>
+        <h3>Extract, Transform, Load (ETL): Common Formats</h3>
         <div>
-            1) Build the core of a graph by combining more than one structured datasets into a common schema or in larger domains, a full blown ontology. We Extract, Transform, Load (ETL) multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, Spark, Databricks or Snowflake. How much ETL varies by industry from relatively little in cybersecurity applications to a significant amount with business graph applications like KYC /AML / financial compliance. A well defined graph model with fewer makes it easy to access, query, analyze and model your business domain in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
+            <b>1)</b> Build the core of a graph by combining more than one structured datasets into a common schema or in larger domains, a full blown ontology. We Extract, Transform, Load (ETL) multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, Spark, Databricks or Snowflake. How much ETL varies by industry from relatively little in cybersecurity applications to a significant amount with business graph applications like KYC /AML / financial compliance. A well defined graph model with fewer makes it easy to access, query, analyze and model your business domain in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -60,12 +61,13 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
             </center>
         <div style="margin-top: 2%;"></div>
+        <h3>Entity Resolution (ER): Deduplication</h3>
         <div>
-            <b>2)</b> Extract a graph from text using Natural Language Processing (NLP) via a chain of operations: NER —> IE —> EL. Named entity recognition (NER) points out entities corresponding to nodes. Information Extraction (IE) creates relationships [edges] between entities. Entity linking links nodes and edges extracted from text documents into single into a core graph established via ETL.
+            Entity Resolution (ER) is the process of deduplicating and combining duplicate nodes and splitting up mistakenly merged nodes. In a similar manner, edges can also be merged or split up.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-            Initially a process of exploratory data analysis (EDA) reveals patterns that can be used to handle the combinatoric problems arising from the need in entity matching to compare every node in the graph with every node. The complexity of this comparison is n^2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
+            Traditional entity resolution involves two phases: blocking and matching. Initially a process of exploratory data analysis (EDA) reveals blocking patterns that can help group data to help limit the number of comparisons between records during the matching phase. The naive complexity of every node to every other comparison is n^2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
         </div>
         <div style="margin-top: 2%;"></div>
         <div style="margin-top: 2%;"></div>
@@ -100,6 +102,10 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
             </center>
         </div>
+        <div>
+            <b>3)</b> Enlarge the core knowledge graph from unstructured data sources using Natural Language Processing (NLP) via a chain of operations: NER —> IE —> EL. Named Entity Recognition (NER) points out entities corresponding to nodes. Information Extraction (IE) creates relationships [edges] between entities. Entity Linking links nodes and edges extracted from text documents into single into a core graph established via ETL.
+        </div>
+        <div style="margin-top: 2%;"></div>
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
