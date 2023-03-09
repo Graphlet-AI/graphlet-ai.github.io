@@ -66,11 +66,18 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
             </center>
         <div style="margin-top: 3%;"></div>
-        <h3>Step 2) Entity Resolution (ER): Manual Deduplication</h3>
+        <h3>Entity Resolution (ER): Node and Edge Deduplication</h3>
         <div>
-            Entity Resolution (ER) is the process of deduplicating and combining duplicate nodes and splitting up mistakenly merged nodes. In a similar manner, edges can also be merged or split up.
+            Entity Resolution (ER) is the process of deduplicating and combining duplicate nodes and splitting up mistakenly merged nodes. In a similar manner, edges can also be merged or split up. This is important as it is difficult to detect patterns in networks if there are disconnected duplicates that are each a part of different, important relationships.
         </div>
         <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Enables-Motif-Search.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <h4>Manual Block and Match</h4>
         <div>
             Traditional entity resolution involves two phases: blocking and matching. Querying data as part of exploratory data analysis (EDA) reveals strategies to match records. This was traditionally done by hand, and it still can be for a limited number of small datasets.
         </div>
@@ -91,7 +98,7 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
-        <h3>Step 3) Entity Resolution (ER): Automatic Deduplication</h3>
+        <h4>Automatic Deduplication</h4>
         <div>
             When dealing with big data, especially when there are a a number of datasets large and small, the traditional entity resolution model of manual blocking and matching starts to break down. It is cumbersome and takes too much developer time. What is needed is a <i>generic approach to entity resolution</i>.
         </div>
