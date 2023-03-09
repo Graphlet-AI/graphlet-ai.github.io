@@ -32,7 +32,7 @@ background: home/bg.png
 <div class="problem-definition">
     <div>
         <div style="margin-top: 4%;"></div>
-        <h2>We build knowledge graph <i>factories</i></h2>
+        <center><h2>We build property graph <i>factories</i></h2></center>
         <div>
             <center>
                 <img style="width: 70%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
@@ -41,8 +41,12 @@ background: home/bg.png
         <div style="margin-top: 3%;"></div>
         <h2>We build <i>property graphs</i> in 3 steps</h2>
         <div style="margin-top: 2%;"></div>
-        <div style="margin-bottom: 2%;">
-            1) Transform myriad datasets into a common ontology. This means we Extract, Transform, Load (ETL) [or ELT] multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, PySpark, Databricks or Snowflake. How much ETL varies by industry from minimal with cybersecurity applications to simplified graph model with fewer makes it easy to access, query, analyze and model in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
+        <div>
+            1) Build the core of a graph by combining more than one structured datasets into a common schema or in larger domains, a full blown ontology. We Extract, Transform, Load (ETL) multiple, large and small datasets from different sources with different formats into a common property graph schema using tools like Python, Spark, Databricks or Snowflake. How much ETL varies by industry from relatively little in cybersecurity applications to a significant amount with business graph applications like KYC /AML / financial compliance. A well defined graph model with fewer makes it easy to access, query, analyze and model your business domain in a graph database such as Neo4j, TigerGraph, ArangoDB or Neptune.
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            Why not load your raw data directly into a graph database and do ETL inside it? Graph databases aren't ETL platforms. They are not designd for it. Python based tools are. Modern ETL increasingly involves using machine learning techniques rather than simple transformations. Graph databases are typically build on top of the Java Virtual Machine (JVM) or C++. Ask your data engineers how productive they will be doing ETL in Python versus Java or C++. Python shines at ETL. The JVM and C++ shine at interactively querying clean graph data.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -73,12 +77,12 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <div>
             <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
+                <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
             </center>
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-            <b>3)</b> Entity resolution using network topology and natural language processing. Recent developments in Large Language Models [LLMs] and Graph Neural Networks (GNNs) allow us to encode nodes and edges as XML-like text using a language model and then combine them based on semantic inferences made by the LLM in combination with those made about the network via a GNN. LLMs have seen many similar documents as the nodes’ text representation on the world wide web.
+            <b>2)</b> Entity resolution using network topology and natural language processing. Recent developments in Large Language Models [LLMs] and Graph Neural Networks (GNNs) allow us to encode nodes and edges as XML-like text using a language model and then combine them based on semantic inferences made by the LLM in combination with those made about the network via a GNN. LLMs have seen many similar documents as the nodes’ text representation on the world wide web.
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
