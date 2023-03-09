@@ -134,19 +134,26 @@ background: home/bg.png
                 <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
             </center>
         </div>
-        <div style="margin-top: 2%;"></div>
+        <div style="margin-top: 3%;"></div>
         <h3>Step 4) Pattern Matching: Network Motif Search</h3>
         <div style="margin-top: 2%;"></div>
         <div>
             While it is nice to think that a single version of your data can be encoded in a graph, the reality is that you must make decisions as to which business logic to encode in the representation you choose for your knowledge graph.
         </div>
         <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 70%;" alt="Multiple chain indirect ownership is a way of tracking Ultimate Beneficial Ownership (UBO)" src="assets/slides/Multiple-Path-Indirect-Ownership-Motif.jpg" />
+            </center>
+        </div>
+        <div style="margin-top: 2%;"></div>
+        <div>
+            <center>
+                <img style="width: 70%;" alt="A business graph risk motif showing how an incorporation services company was purchased and used to create fake companies to launder money." src="assets/slides/Corrupt-Incorporation-Services-Motif.jpg" />
+            </center>
+        </div>
     </div>
     <div style="margin-top: 3%;" >
-    <div>
-        <h2>What is a network motif? Can you search for patterns in graphs / networks?</h2>
-    </div>
-    </div>
     <div>
         <h2>How can a graph model my data?</h2>
         <div>
@@ -182,7 +189,7 @@ background: home/bg.png
             </center>
         </div>
         <div style="margin-top: 3%;"></div>
-        <h2>What is graph machine learning? What is a GNN?</h2>
+        <h2>What is graph machine learning (graph ML)? What is a GNN?</h2>
         <div>
             I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Knowledge graphs modeled using graph machine learning (Graph ML) and graph neural networks (GNNs) are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
