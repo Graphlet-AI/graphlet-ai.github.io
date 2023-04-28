@@ -2,7 +2,7 @@
   color: white;
   text-align: center;
   font-size: 45px;
-  padding-top: 20%;
+  padding-top: 5%;
   padding-bottom: 2rem;
   max-width: 80%;
   margin: auto;
@@ -89,14 +89,13 @@
 }
 @media screen and (min-width: 1440px) {
   .introduction {
-    background-size: contain;
     div {
       max-width: 1440px;
     }
     padding-bottom: 5%;
   }
   #introduction {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .problem-definition {
     div {
@@ -104,17 +103,26 @@
     }
   }
 }
+@media screen and (max-width: 1439px) {
+  #introduction {
+    padding-top: 10%;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .introduction {
+    background-size: contain;
+  }
+}
 @media screen and (max-width: 1101px) {
   #introduction {
-    margin-top: 1rem;
-    padding-top: 2rem;
+    padding-top: 5%;
   }
   .introduction {
     padding: 2rem;
     text-align: justify;
     background-repeat: no-repeat;
     padding-top: 10%;
-    padding-bottom: 15%;
+    padding-bottom: 25%;
 
     div {
       background-image: none;
