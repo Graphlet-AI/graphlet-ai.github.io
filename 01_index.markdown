@@ -27,11 +27,9 @@ background: home/bg.png
 <div class="problem-definition">
     <div>
         <div style="margin-top: 3%;"></div>
-        <center><h2>We build property graph <i>factories</i></h2></center>
-        <div>
-            <center>
-                <img style="width: 70%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
-            </center>
+        <h2 class='center'>We build property graph <i>factories</i></h2>
+        <div  class='center'>
+            <img style="width: 70%; margin-top: 1%;" alt="Knowledge Graph Construction Architecture" src="assets/slides/KG-Factory-System-Architecture-Diagram.jpg" />
         </div>
         <div style="margin-top: 4%;"></div>
         <h2>Property graph factories build <i>property graphs</i> in <b>4 steps</b>...</h2>
@@ -54,26 +52,20 @@ background: home/bg.png
             Once a core knowledge graph built from structured datasets is established, then it is time to bring in unstructured datasets to extend that network to a larger knowledge base using Natural Language Processing (NLP). Starting with unstructured data can be much more difficult - there is no anchor on which to peg the entities [nodes] and relationships [edges] you extract from text.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-1-Bronze-ETL.png" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-1-Bronze-ETL.png" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.pngEntity-Resolution-Phase-1-Silver-ETL.png" />
         <div style="margin-top: 3%;"></div>
         <h3>Entity Resolution (ER): Node and Edge Deduplication</h3>
         <div>
             Entity Resolution (ER) is the process of deduplicating and combining duplicate nodes and splitting up mistakenly merged nodes. In a similar manner, edges can also be merged or split up. This is important as it is difficult to detect patterns in networks if there are disconnected duplicates that are each a part of different, important relationships.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Enables-Motif-Search.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Enables-Motif-Search.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
         <h4>Manual Block and Match</h4>
@@ -82,19 +74,15 @@ background: home/bg.png
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
-            The next step is to compare records for matching. This presents a problem. The naive complexity of comparing every node with every other node is n^2 / 2, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
+            The next step is to compare records for matching. This presents a problem. The naive complexity of comparing every node with every other node is <var>n<sup>2</sup>/2</var>, where n is the number of nodes. This can quickly get out of hand with millions or billions of nodes! Blocking is a strategy to prune the set of nodes compared down to groups that are more manageable.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Blocking.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-2---Blocking.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Clean Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-2---Manual-Matching.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
         <h4>Automatic Deduplication</h4>
@@ -110,28 +98,20 @@ background: home/bg.png
             Manual blocking and matching for numerous datasets is a cumbersome and expensive activity. Advances in AI - representation learning and an architecture from Google called Grale - make a generic entity resolution (ER) system possible. This system is configurable to work across multiple datasets by embedding records using large language models (LLMs) such as GPT-3 or ChatGPT, but tuned specifically for the entity matching task.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution---Ditto-Encoding.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution---Ditto-Encoding.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---LSH-Blocking.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Embedding-Distance.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Embedding-Distance.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Raw Data in Bronze Tables" src="assets/slides/Entity-Resolution-Phase-3---Fine-Tuned-Classifier.jpg" />
         </div>
         <div style="margin-top: 3%;"></div>
         <h3>Step 4) Pattern Matching: Network Motif Search</h3>
@@ -140,16 +120,12 @@ background: home/bg.png
             While it is nice to think that a single version of your data can be encoded in a graph, the reality is that you must make decisions as to which business logic to encode in the representation you choose for your knowledge graph.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Multiple chain indirect ownership is a way of tracking Ultimate Beneficial Ownership (UBO)" src="assets/slides/Multiple-Path-Indirect-Ownership-Motif.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Multiple chain indirect ownership is a way of tracking Ultimate Beneficial Ownership (UBO)" src="assets/slides/Multiple-Path-Indirect-Ownership-Motif.jpg" />
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="A business graph risk motif showing how an incorporation services company was purchased and used to create fake companies to launder money." src="assets/slides/Corrupt-Incorporation-Services-Motif.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="A business graph risk motif showing how an incorporation services company was purchased and used to create fake companies to launder money." src="assets/slides/Corrupt-Incorporation-Services-Motif.jpg" />
         </div>
     </div>
     <div style="margin-top: 3%;" >
@@ -159,20 +135,16 @@ background: home/bg.png
             Property graphs can represent data from any database you throw at them. They are objects and their relationships just like the world around us. Objects have properties just like a baseball has a width. Relationships can as well, just like a pitch between a pitcher and batter has a speed.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Property graph model" src="assets/slides/Property-Graph-Models.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Property graph model" src="assets/slides/Property-Graph-Models.jpg" />
         </div>
         <div style="margin-top: 4%;"></div>
         <div>
             You may be used to thinking of graphs as simple, mathematical concepts but property graphs have different types of nodes and edges that are much more powerful for data science and artificial intelligence than simple graphs are.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 900px;" alt="Simple vs property graphs" src="assets/slides/Heterogeneous-Graph-Diagram.png">
-            </center>
+        <div class="center">
+            <img style="width: 900px;" alt="Simple vs property graphs" src="assets/slides/Heterogeneous-Graph-Diagram.png">
         </div>
     </div>
     <div>
@@ -182,10 +154,8 @@ background: home/bg.png
             A property graph is a set of objects representing nodes [also known as vertex/vertices] and edges [also known as links].
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 70%;" alt="Property graphs vs RDF Triples. Both are knowledge graphs." src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
-            </center>
+        <div class="center">
+            <img style="width: 70%;" alt="Property graphs vs RDF Triples. Both are knowledge graphs." src="assets/slides/RDF-Triple-Stores-vs-Property-Graphs.jpg" />
         </div>
         <div style="margin-top: 3%;"></div>
         <h2>What is graph machine learning (graph ML)? What is a GNN?</h2>
@@ -193,10 +163,8 @@ background: home/bg.png
             I'll let you in on a secret that is driving the popularity of enterprise knowledge graphs, property graphs, graph databases and Graph Neural Networks (GNNs): MOST DATA IS GRAPH DATA. To compose a single table to get the corresponding vectors, matrices and tensors we load into GPUs to drive machine learning algorithms, several tables have usually been combined [squashed] into one table. There's a problem with this... it is a lossy process. We threw away the relationships. Knowledge graphs modeled using graph machine learning (Graph ML) and graph neural networks (GNNs) are able to learn better to build more powerful models because they have a greater potential by matching the structure of the data’s entities and their relationships.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>
-            <center>
-                <img style="width: 900px;" alt="Networks vs sequence representations. Networks preserve inherent relational bias of data" src="assets/home/different_types_of_networks.png">
-            </center>
+        <div class="center">
+            <img style="width: 900px;" alt="Networks vs sequence representations. Networks preserve inherent relational bias of data" src="assets/home/different_types_of_networks.png">
         </div>
     </div>
     <div>
