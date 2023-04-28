@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-permalink: "/"
+permalink: '/'
 header: Home
 title: Home
 head: Graphlet AI
@@ -13,7 +13,6 @@ background: home/bg.png
 ---
 
 <div class="introduction">
-    <div style="margin-top: -5%;"></div>
     <h2 id="introduction">Knowledge Graph Construction</h2>
     <div>
         <div>
@@ -104,7 +103,7 @@ background: home/bg.png
         </div>
         <div style="margin-top: 2%;"></div>
         <div>    
-            Recent developments in Large Language Models [LLMs] like <a href="https://chat.openai.com/chat/">ChatGPT</a> and Graph Neural Networks (GNNs) allow us to ETL nodes and edges into XML-like text and sentence encode them using a large language model and then combine them based on semantic inferences made by the LLM in combination with the network topology. LLMs have seen many similar documents as the nodes’ text representation on the world wide web, and if we provide a few clues... they provide state of the art entity resolution for both the blocking and matching stages!
+            Recent developments in Large Language Models [LLMs] like <a href="https://chat.openai.com/chat/" target="_blank">ChatGPT</a> and Graph Neural Networks (GNNs) allow us to ETL nodes and edges into XML-like text and sentence encode them using a large language model and then combine them based on semantic inferences made by the LLM in combination with the network topology. LLMs have seen many similar documents as the nodes’ text representation on the world wide web, and if we provide a few clues... they provide state of the art entity resolution for both the blocking and matching stages!
         </div>
         <div style="margin-top: 2%;"></div>
         <div>
@@ -206,22 +205,22 @@ background: home/bg.png
         <div>
             We can build knowledge graphs for any platform, but here are a few tools that are more up our alley to create business value using graphs and networks:
         </div>
-        <li>
-            <ul>Python tools like <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://networkx.org/">NetworkX</a>, <a href="https://graph-tool.skewed.de/">graph-tool</a>, <a href="https://networkit.github.io/">NetworKit</a> or <a href="https://www.graphifi.com/easygraph">EasyGraph</a></ul>
-            <ul><a href="https://www.r-project.org/">R</a> tools like <a href="https://igraph.org/">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/">ggraph</a></ul>
-            <ul>Big data tools like <a href="https://spark.apache.org/docs/latest/api/python/">PySpark</a>, <a href="https://www.databricks.com/">Databricks</a>, <a href="https://www.dask.org/">Dask</a>, <a href="https://www.snowflake.com/en/">Snowflake</a>  or <a href="https://graphframes.github.io/graphframes/docs/_site/index.html">GraphFrames</a></ul>
-            <ul>GPU-accelerated compute tools like RAPIDS <a href="https://github.com/rapidsai/cugraph">cuGraph</a></ul>
-            <ul>Property graph databases like <a href="https://neo4j.com/">Neo4j</a>, <a href="https://www.tigergraph.com/">TigerGraph</a>, <a href="https://www.arangodb.com/graph-database/">ArangoDB</a>, <a href="https://www.oracle.com/">Oracle Graph Studio</a> or Oracle Graph Studio</ul>
-            <ul>Enterprise knowledge graphs that use RDF Triple Stores / SPARQL like <a href="https://www.stardog.com/">StarDog</a> or <a href="https://www.ontotext.com/">Ontotext</a></ul>
-            <ul>Large knowledge bases like <a href="https://query.wikidata.org/">WikiData Query Service</a></ul>
-            <ul><a href="https://jupyter.org/">Jupyter</a>, <a href="https://www.databricks.com/">Databricks</a> and <a href="https://www.snowflake.com/en/">Snowflake</a> Notebooks</ul>
-            <ul>Natural Language Processing (NLP) users of tools such as <a href="https://spacy.io/">spaCy</a>, <a href="https://github.com/flairNLP/flair">FlairNLP</a>, <a href="https://blinkforhome.com/">BLINK</a>, <a href="https://radimrehurek.com/gensim/">Gensim</a> or <a href="https://www.nltk.org/">NLTK</a></ul>
-            <ul>Network visualization tools like <a href="https://gephi.org/">Gephi</a>, <a href="https://www.graphistry.com/">Graphistry</a> or <a href="https://cambridge-intelligence.com/keylines/">Cambridge Intelligence Keylines</a> / <a href="https://cambridge-intelligence.com/regraph/">ReGraph</a></ul>
-        </li>
+        <ul>
+            <li>Python tools like <a href="https://pandas.pydata.org/" target="_blank">Pandas</a> and <a href="https://networkx.org/" target="_blank">NetworkX</a>, <a href="https://graph-tool.skewed.de/" target="_blank">graph-tool</a>, <a href="https://networkit.github.io/" target="_blank">NetworKit</a> or <a href="https://www.graphifi.com/easygraph" target="_blank">EasyGraph</a></li>
+            <li><a href="https://www.r-project.org/" target="_blank">R</a> tools like <a href="https://igraph.org/" target="_blank">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/" target="_blank">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/" target="_blank">ggraph</a></li>
+            <li>Big data tools like <a href="https://spark.apache.org/docs/latest/api/python/" target="_blank">PySpark</a>, <a href="https://www.databricks.com/" target="_blank">Databricks</a>, <a href="https://www.dask.org/" target="_blank">Dask</a>, <a href="https://www.snowflake.com/en/" target="_blank">Snowflake</a>  or <a href="https://graphframes.github.io/graphframes/docs/_site/index.html" target="_blank">GraphFrames</a></li>
+            <li>GPU-accelerated compute tools like RAPIDS <a href="https://github.com/rapidsai/cugraph" target="_blank">cuGraph</a></li>
+            <li>Property graph databases like <a href="https://neo4j.com/" target="_blank">Neo4j</a>, <a href="https://www.tigergraph.com/" target="_blank">TigerGraph</a>, <a href="https://www.arangodb.com/graph-database/" target="_blank">ArangoDB</a>, <a href="https://www.oracle.com/" target="_blank">Oracle Graph Studio</a> or Oracle Graph Studio</li>
+            <li>Enterprise knowledge graphs that use RDF Triple Stores / SPARQL like <a href="https://www.stardog.com/" target="_blank">StarDog</a> or <a href="https://www.ontotext.com/" target="_blank">Ontotext</a></li>
+            <li>Large knowledge bases like <a href="https://query.wikidata.org/" target="_blank">WikiData Query Service</a></li>
+            <li><a href="https://jupyter.org/" target="_blank">Jupyter</a>, <a href="https://www.databricks.com/" target="_blank">Databricks</a> and <a href="https://www.snowflake.com/en/" target="_blank">Snowflake</a> Notebooks</li>
+            <li>Natural Language Processing (NLP) users of tools such as <a href="https://spacy.io/" target="_blank">spaCy</a>, <a href="https://github.com/flairNLP/flair" target="_blank">FlairNLP</a>, <a href="https://blinkforhome.com/" target="_blank">BLINK</a>, <a href="https://radimrehurek.com/gensim/" target="_blank">Gensim</a> or <a href="https://www.nltk.org/" target="_blank">NLTK</a></li>
+            <li>Network visualization tools like <a href="https://gephi.org/" target="_blank">Gephi</a>, <a href="https://www.graphistry.com/" target="_blank">Graphistry</a> or <a href="https://cambridge-intelligence.com/keylines/" target="_blank">Cambridge Intelligence Keylines</a> / <a href="https://cambridge-intelligence.com/regraph/" target="_blank">ReGraph</a></li>
+        </ul>
     </div>
     <div>
         <div style="margin-top: 2%;"></div>
-        <h2>Our Principal Consultant, <a href="https://www.linkedin.com/in/russelljurney/">Russell Jurney</a></h2>
+        <h2>Our Principal Consultant, <a href="https://www.linkedin.com/in/russelljurney/" target="_blank">Russell Jurney</a></h2>
         <img align="left" style="margin-left: 0%; margin-right: 2%; width: 17%" src="assets/home/russell_jurney_headshot.jpg" alt="The beautiful face of Russell Jurney. Bald. Shiny." />
         <div>
             My name is Russell Jurney. I work at the intersection of big data, large networks - property graphs or knowledge graphs, representation learning with Graph Neural Networks (GNNs), Natural Language Processing (NLP) and Understanding (NLU), model explainability using network visualization and vector search for information retrieval.
