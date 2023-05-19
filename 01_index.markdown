@@ -57,7 +57,9 @@ background: home/bg.png
         </div>
         <div style="margin-top: 2%;"></div>
         <div class="center">
-            <img style="width: 70%;" alt="Transformed, Cleaned Data in Silver Tables" src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.pngEntity-Resolution-Phase-1-Silver-ETL.png" />
+            <img style="width: 70%;" alt="
+                                          
+                                          " src="assets/slides/Entity-Resolution-Phase-1-Silver-ETL.png" />
         <div style="margin-top: 3%;"></div>
         <h3>Entity Resolution (ER): Node and Edge Deduplication</h3>
         <div>
