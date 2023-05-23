@@ -29,7 +29,10 @@ body {
 .custom-btn:hover {
   cursor: pointer;
 }
-
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
 @media screen and (max-width: 426px) {
   .site-bg {
     margin-top: -3rem;

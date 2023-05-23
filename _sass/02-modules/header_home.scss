@@ -2,11 +2,11 @@
   border: none;
 }
 .home-header-bg {
-  background-image: url("/assets/home/papers.jpg");
+  background-image: url('/assets/home/papers.jpg');
   background-size: cover;
 }
 .home-header-tagline {
-  background-image: url("/assets/header/graphlet tagline.svg");
+  background-image: url('/assets/header/graphlet tagline.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -22,7 +22,7 @@
   align-items: center;
   gap: 3%;
   img {
-    width: 25%;
+    width: 50%;
   }
 }
 .home-heading {
@@ -45,6 +45,13 @@
 .page-link {
   min-width: fit-content;
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  float: none;
+}
 @media (max-width: 769px) {
   .home-heading {
     font-size: 4rem;
@@ -64,15 +71,6 @@
     text-align: center;
     width: 100%;
   }
-  .hide-link > a {
-    display: none !important;
-  }
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
   .trigger {
     justify-content: center;
   }
@@ -89,6 +87,15 @@
   }
   .custom-btn {
     font-size: 15px;
+  }
+  .hide-link > a {
+    display: none !important;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 338px) {
