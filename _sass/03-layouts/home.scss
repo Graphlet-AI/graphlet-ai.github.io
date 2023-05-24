@@ -176,6 +176,10 @@
   }
   .introduction {
     padding-bottom: 40%;
+
+    > div {
+      max-width: 100%;
+    }
   }
   .home-content {
     margin-top: -7rem;
