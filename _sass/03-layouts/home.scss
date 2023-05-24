@@ -98,6 +98,9 @@
     font-size: 22px;
   }
 }
+.unordered-list {
+  list-style: lower-roman;
+}
 @media screen and (min-width: 1440px) {
   .introduction {
     div {

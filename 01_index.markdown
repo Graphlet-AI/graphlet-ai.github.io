@@ -173,7 +173,7 @@ background: home/bg.png
         <div class="justify">
             We can build knowledge graphs for any platform, but here are a few tools that are more up our alley to create business value using graphs and networks:
         </div>
-        <ul>
+        <ul class="unordered-list">
             <li>Python tools like <a href="https://pandas.pydata.org/" target="_blank">Pandas</a> and <a href="https://networkx.org/" target="_blank">NetworkX</a>, <a href="https://graph-tool.skewed.de/" target="_blank">graph-tool</a>, <a href="https://networkit.github.io/" target="_blank">NetworKit</a> or <a href="https://www.graphifi.com/easygraph" target="_blank">EasyGraph</a></li>
             <li><a href="https://www.r-project.org/" target="_blank">R</a> tools like <a href="https://igraph.org/" target="_blank">iGraph</a>, <a href="https://tidygraph.data-imaginist.com/" target="_blank">tidygraph</a> and <a href="https://ggraph.data-imaginist.com/" target="_blank">ggraph</a></li>
             <li>Big data tools like <a href="https://spark.apache.org/docs/latest/api/python/" target="_blank">PySpark</a>, <a href="https://www.databricks.com/" target="_blank">Databricks</a>, <a href="https://www.dask.org/" target="_blank">Dask</a>, <a href="https://www.snowflake.com/en/" target="_blank">Snowflake</a>  or <a href="https://graphframes.github.io/graphframes/docs/_site/index.html" target="_blank">GraphFrames</a></li>
