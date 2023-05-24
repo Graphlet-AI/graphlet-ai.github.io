@@ -87,6 +87,17 @@
     color: $secondary-color;
   }
 }
+.content-img {
+  width: 100%;
+}
+.post-content {
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .introduction {
     div {
@@ -139,7 +150,7 @@
   .problem-definition {
     text-align: justify;
     img {
-      margin-left: 0;
+      margin: 0;
       width: 100%;
     }
   }
@@ -157,7 +168,7 @@
 }
 @media screen and (max-width: 426px) {
   #introduction {
-    font-size: 35px;
+    font-size: 24px;
     margin-top: 20%;
   }
   .introduction {
@@ -165,6 +176,19 @@
   }
   .home-content {
     margin-top: -7rem;
+  }
+  .problem-definition,
+  .introduction {
+    font-size: 16px;
+  }
+  .post-content {
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 18px;
+    }
   }
 }
 @media screen and (max-width: 376px) {
