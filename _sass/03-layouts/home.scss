@@ -101,72 +101,17 @@
 .unordered-list {
   list-style: lower-roman;
 }
-@media screen and (min-width: 1440px) {
-  .introduction {
-    div {
-      max-width: 1440px;
-    }
-    padding-bottom: 5%;
-  }
+@media screen and (max-width: 376px) {
   #introduction {
-    padding-top: 5%;
-  }
-  .problem-definition {
-    div {
-      max-width: 1440px;
-    }
-  }
-}
-@media screen and (max-width: 1439px) {
-  #introduction {
-    padding-top: 10%;
-  }
-}
-@media screen and (min-width: 1101px) {
-  .introduction {
-    background-size: contain;
-  }
-}
-@media screen and (max-width: 1101px) {
-  #introduction {
-    padding-top: 5%;
+    margin-top: 0;
   }
   .introduction {
-    padding: 2rem;
-    text-align: justify;
-    background-repeat: no-repeat;
-    padding-top: 10%;
-    padding-bottom: 25%;
-
-    div {
-      background-image: none;
-      height: fit-content;
-      padding: 0;
-    }
-
-    .home-highlight {
-      background-image: none;
-      background-color: $main-color-dark;
-      padding: 2rem;
-    }
-  }
-  .problem-definition {
-    text-align: justify;
-    img {
-      margin: 0;
-      width: 100%;
-    }
-  }
-  .img-caption {
-    margin: 1rem 0 2rem;
-  }
-}
-@media screen and (max-width: 769px) {
-  .paper-bg {
-    padding: 2rem 3rem;
+    padding-bottom: 10%;
+    background-image: none;
+    background-color: $main-color;
   }
   .home-content {
-    margin-top: -5rem;
+    margin-top: -2rem;
   }
 }
 @media screen and (max-width: 426px) {
@@ -198,16 +143,74 @@
     }
   }
 }
-@media screen and (max-width: 376px) {
-  #introduction {
-    margin-top: 0;
-  }
-  .introduction {
-    padding-bottom: 10%;
-    background-image: none;
-    background-color: $main-color;
+@media screen and (max-width: 769px) {
+  .paper-bg {
+    padding: 2rem 3rem;
   }
   .home-content {
-    margin-top: -2rem;
+    margin-top: -5rem;
+  }
+  .introduction {
+    padding-bottom: 20%;
+  }
+}
+@media screen and (max-width: 1101px) {
+  #introduction {
+    padding-top: 5%;
+  }
+  .introduction {
+    padding: 2rem;
+    text-align: justify;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 13%;
+
+    div {
+      background-image: none;
+      height: fit-content;
+      padding: 0;
+    }
+
+    .home-highlight {
+      background-image: none;
+      background-color: $main-color-dark;
+      padding: 2rem;
+    }
+  }
+  .problem-definition {
+    text-align: justify;
+    img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .img-caption {
+    margin: 1rem 0 2rem;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .introduction {
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 1439px) {
+  #introduction {
+    padding-top: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .introduction {
+    div {
+      max-width: 80%;
+    }
+    padding-bottom: 5%;
+  }
+  #introduction {
+    padding-top: 5%;
+  }
+  .problem-definition {
+    div {
+      max-width: 1440px;
+    }
   }
 }
