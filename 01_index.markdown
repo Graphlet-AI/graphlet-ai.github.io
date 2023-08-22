@@ -187,7 +187,7 @@ background: home/bg.png
         <div style="margin-top: 2%;"></div>
         <h2 style="margin-bottom: 1rem;">Our Principal Consultant, <a href="https://www.linkedin.com/in/russelljurney/" target="_blank">Russell Jurney</a></h2>
         <div class="justify intro-flex">
-            <img align="left" src="assets/home/russell_jurney_headshot.jpg" alt="The beautiful face of Russell Jurney. Bald. Shiny." />
+            <!--<img align="left" src="assets/home/russell_jurney_headshot.jpg" alt="The beautiful face of Russell Jurney. Bald. Shiny." />-->
             <div>
                 <p>
                     My name is Russell Jurney. I work at the intersection of big data, large networks - property graphs or knowledge graphs, representation learning with Graph Neural Networks (GNNs), Natural Language Processing (NLP) and Understanding (NLU), model explainability using network visualization and vector search for information retrieval.
