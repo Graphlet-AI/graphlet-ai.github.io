@@ -186,7 +186,7 @@ background: home/bg.png
     <div>
         <div style="margin-top: 2%;"></div>
         <h2 style="margin-bottom: 1rem;">Our Principal Consultant, <a href="https://www.linkedin.com/in/russelljurney/" target="_blank">Russell Jurney</a></h2>
-        <div class="justify intro-flex">
+        <div class="justify">
             <!--<img align="left" src="assets/home/russell_jurney_headshot.jpg" alt="The beautiful face of Russell Jurney. Bald. Shiny." />-->
             <div>
                 <p>
