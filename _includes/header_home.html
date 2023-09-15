@@ -1,33 +1,22 @@
 <header class="site-header home-header-bg">
-  <div class="wrapper" style="text-align: center">
-    {%- assign default_paths = site.pages | map: "path" -%} {%- assign
-    page_paths = site.header_pages | default: default_paths -%} {%- assign
-    titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <div class="wrapper" style="text-align: center">
+        {%- assign default_paths = site.pages | map: "path" -%} {%- assign
+        page_paths = site.header_pages | default: default_paths -%} {%- assign
+        titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-    <nav class="site-nav main-nav">
-      <div class="trigger hide-link">
-        <a class="page-link" href="/blog">Blog</a>
-        <img src="{{site.baseurl}}/assets/Branding/Graphlet AI.svg" />
-        <a
-          class="page-link github-link"
-          href="https://github.com/Graphlet-AI/graphlet"
-          >GitHub</a
-        >
-      </div>
-      <div class="menu">
-        <a class="page-link" href="/blog">Blog</a>
-        <a
-          class="page-link github-link"
-          href="https://github.com/Graphlet-AI/graphlet"
-          >GitHub</a
-        >
-      </div>
-    </nav>
+        <nav class="site-nav main-nav">
+            <div class="trigger hide-link">
+                <a class="page-link" href="https://blog.graphlet.ai">Blog</a>
+                <img src="{{site.baseurl}}/assets/Branding/Graphlet AI.svg" />
+                <a class="page-link github-link" href="https://github.com/Graphlet-AI/graphlet">GitHub</a>
+            </div>
+            <div class="menu">
+                <a class="page-link" href="/blog">Blog</a>
+                <a class="page-link github-link" href="https://github.com/Graphlet-AI/graphlet">GitHub</a>
+            </div>
+        </nav>
 
-    <img
-      src="/assets/header/graphlet tagline.svg"
-      style="max-width: 80%; margin-top: 2rem; margin-bottom: 5rem"
-    />
-    <!--<div class="custom-btn">Get Started</div>-->
-  </div>
+        <img src="/assets/header/graphlet tagline.svg" style="max-width: 80%; margin-top: 2rem; margin-bottom: 5rem" />
+        <!--<div class="custom-btn">Get Started</div>-->
+    </div>
 </header>
