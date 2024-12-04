@@ -5,10 +5,11 @@
 layout: home
 permalink: '/'
 header: Home
-title: Home
+title: AI Consulting for Knowledge Graphs, Graph Machine Learning, Entity Resolution & Large Language Models - Graphlet AI
 head: Graphlet AI
 subtitle: Knowledge Graph Factory
-description: Extract, Transform, Resolve, Model, Predict, Explain
+description: Graphlet provides AI consulting specializing in knowledge graph construction, entity resolution, graph machine learning (GML), large language models (LLM), and scalable data engineering solutions.
+
 background: home/bg.png
 ---
 
@@ -91,7 +92,7 @@ background: home/bg.png
             When dealing with big data, especially when there are a a number of datasets large and small, the traditional entity resolution model of manual blocking and matching starts to break down. It is cumbersome and takes too much developer time. What is needed is a <i>generic approach to entity resolution</i>.
         </div>
         <div style="margin-top: 2%;"></div>
-        <div>    
+        <div>
             Recent developments in Large Language Models [LLMs] like <a href="https://chat.openai.com/chat/" target="_blank">ChatGPT</a> and Graph Neural Networks (GNNs) allow us to ETL nodes and edges into XML-like text and sentence encode them using a large language model and then combine them based on semantic inferences made by the LLM in combination with the network topology. LLMs have seen many similar documents as the nodes’ text representation on the world wide web, and if we provide a few clues... they provide state of the art entity resolution for both the blocking and matching stages!
         </div>
         <div style="margin-top: 2%;"></div>
