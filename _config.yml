@@ -21,8 +21,8 @@
 title: Graphlet AI
 email: rjurney@graphlet.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Home page of knowledge graph consultancy Graphlet AI, which builds knowledge graphs 
-  out of myriad sources of structured and unstructured data using big data tools.
+  AI Consulting for Knowledge Graphs, Graph Machine Learning, Entity Resolution & Large Language 
+  Models - Graphlet AI
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rjurney
