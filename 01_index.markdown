@@ -8,7 +8,7 @@ header: Home
 title: AI Consulting for Knowledge Graphs, Graph Machine Learning, Entity Resolution & Large Language Models - Graphlet AI
 head: Graphlet AI
 subtitle: Knowledge Graph Factory
-description: Graphlet provides AI consulting specializing in knowledge graph construction, entity resolution, graph machine learning (GML), large language models (LLM), and scalable data engineering solutions.
+description: Test
 
 background: home/bg.png
 ---
