@@ -19,10 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Graphlet AI
-email: rjurney@graphlet.com
+email: rjurney@graphlet.ai
 description: >- # this means to ignore newlines until "baseurl:"
-  AI Consulting for Knowledge Graphs, Graph Machine Learning, Entity Resolution & Large Language 
-  Models - Graphlet AI
+  Graphlet AI offcers expert consulting for Knowledge Graphs, Graph Machine Learning, Entity Resolution, Large Language Models and Scalable Data Engineering Solutions.
+keywords: Graph Machine Learning, Knowledge Graphs, Entity Resolution, Natural Language Processing, NLP, Large Language Models, LLMs, Graph Neural Networks, GNNs, Graph Analytics, Data Engineering, Network Visualization, Property Graphs, Spark, PySpark, GraphFrames, Neo4j, Cypher
+author: Russell Jurney, Graphlet AI
+email: rjurney@graphlet.ai
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rjurney
